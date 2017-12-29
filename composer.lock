@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "37d08c807601ba6ec11dd8bc0190c6da",
+    "content-hash": "d6e7e53e7c859fb1ecd788c9a0dcfd09",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1144,6 +1144,51 @@
                 "shell"
             ],
             "time": "2016-03-09T05:03:14+00:00"
+        },
+        {
+            "name": "stechstudio/laravel-ssh-tunnel",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stechstudio/laravel-ssh-tunnel.git",
+                "reference": "233dfc867fde748f32901c2a53078a240f256ffb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stechstudio/laravel-ssh-tunnel/zipball/233dfc867fde748f32901c2a53078a240f256ffb",
+                "reference": "233dfc867fde748f32901c2a53078a240f256ffb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.2.x|5.3.x|5.4.x|5.5.x"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "STS\\Tunneler\\": "src"
+                },
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bubba Hines",
+                    "email": "rob@stechstudio.com"
+                }
+            ],
+            "description": "Easy creation & maintenance of an SSH Tunnel for Laravel/Lumen",
+            "keywords": [
+                "laravel",
+                "lumen",
+                "mysql",
+                "ssh",
+                "tunnel"
+            ],
+            "time": "2017-09-13T12:22:29+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
