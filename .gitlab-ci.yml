@@ -1,0 +1,19 @@
+before_script:
+  - apt-get update -yqq
+  - apt-get install libcurl4-gnutls-dev libicu-dev libmcrypt-dev zlib1g-dev libssl-dev -yqq
+  - docker-php-ext-install mbstring mcrypt curl json intl zip mysqli pdo pdo_mysql
+  - curl -sS https://getcomposer.org/installer | php
+  - cp .env.testing .env
+  - php -v
+  - php composer.phar --version
+  - php composer.phar install
+  - php artisan key:generate
+  - php artisan config:cache
+
+after_script:
+  - cat storage/logs/laravel.log
+
+phpunit:php7.0:
+  image: php:7.0
+  script:
+  - php vendor/bin/phpunit --colors

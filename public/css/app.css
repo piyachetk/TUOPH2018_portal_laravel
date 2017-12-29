@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('/font/thsarabunnew-webfont.eot');
+    src: url('/font/thsarabunnew-webfont.eot?#iefix') format('embedded-opentype'), url('/font/thsarabunnew-webfont.woff') format('woff'), url('/font/thsarabunnew-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+body {
+    font-family: 'THSarabunNew', Sans-Serif !important;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    min-height: 400px;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
+.brand-logo {
+    font-size: 1.5rem !important
+}
+
+.footer-copyright a {
+    color: lightgrey;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline
+}
+
+.fullwidth {
+    width: 100%
+}
+
+main {
+    padding-top: 15px;
+    font-size: 18px
+}
+
+.smll {
+    font-size: 70%
+}
+
+h1 {
+    line-height: 120%;
+    text-align: center;
+    font-size: 5vmax
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    line-height: 4rem
+}
+
+.card-image {
+    max-height: 17rem
+}
+
+.card-image .activator {
+    -webkit-transition: all 1.3s ease-out;
+    transition: all 1.3s ease-out;
+}
+
+a:hover .activator, a:focus .activator {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+p.th {
+    line-height: 2.0rem;
+}
+
+.fullwidth {
+    width: 100%
+}
+
+.sector {
+    margin: 0.5rem 0 1rem 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 15px 25px 15px 15px;
+    width: 100%
+}
+
+@media print {
+    nav, .button-collapse, .side-nav {
+        display: none;
+    }
+
+    .divider {
+        border-bottom: 1px solid grey;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    html, body, main {
+        font-size: 14px;
+    }
+
+    .hide-on-print {
+        display:none;
+    }
+
+    .footer-copyright .container {
+        font-size: 0.7rem;
+        text-align:center;
+    }
+
+    footer.page-footer {
+        background-color: dimgrey !important;
+    }
+
+    /* Make printer use large-screen formatting */
+    .row .col.l1 {
+        width: 8.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l2 {
+        width: 16.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l4 {
+        width: 33.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l5 {
+        width: 41.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l6 {
+        width: 50%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l7 {
+        width: 58.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l8 {
+        width: 66.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l9 {
+        width: 75%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l10 {
+        width: 83.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l11 {
+        width: 91.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.l12 {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .row .col.offset-l1 {
+        margin-left: 8.3333333333%
+    }
+
+    .row .col.pull-l1 {
+        right: 8.3333333333%
+    }
+
+    .row .col.push-l1 {
+        left: 8.3333333333%
+    }
+
+    .row .col.offset-l2 {
+        margin-left: 16.6666666667%
+    }
+
+    .row .col.pull-l2 {
+        right: 16.6666666667%
+    }
+
+    .row .col.push-l2 {
+        left: 16.6666666667%
+    }
+
+    .row .col.offset-l3 {
+        margin-left: 25%
+    }
+
+    .row .col.pull-l3 {
+        right: 25%
+    }
+
+    .row .col.push-l3 {
+        left: 25%
+    }
+
+    .row .col.offset-l4 {
+        margin-left: 33.3333333333%
+    }
+
+    .row .col.pull-l4 {
+        right: 33.3333333333%
+    }
+
+    .row .col.push-l4 {
+        left: 33.3333333333%
+    }
+
+    .row .col.offset-l5 {
+        margin-left: 41.6666666667%
+    }
+
+    .row .col.pull-l5 {
+        right: 41.6666666667%
+    }
+
+    .row .col.push-l5 {
+        left: 41.6666666667%
+    }
+
+    .row .col.offset-l6 {
+        margin-left: 50%
+    }
+
+    .row .col.pull-l6 {
+        right: 50%
+    }
+
+    .row .col.push-l6 {
+        left: 50%
+    }
+
+    .row .col.offset-l7 {
+        margin-left: 58.3333333333%
+    }
+
+    .row .col.pull-l7 {
+        right: 58.3333333333%
+    }
+
+    .row .col.push-l7 {
+        left: 58.3333333333%
+    }
+
+    .row .col.offset-l8 {
+        margin-left: 66.6666666667%
+    }
+
+    .row .col.pull-l8 {
+        right: 66.6666666667%
+    }
+
+    .row .col.push-l8 {
+        left: 66.6666666667%
+    }
+
+    .row .col.offset-l9 {
+        margin-left: 75%
+    }
+
+    .row .col.pull-l9 {
+        right: 75%
+    }
+
+    .row .col.push-l9 {
+        left: 75%
+    }
+
+    .row .col.offset-l10 {
+        margin-left: 83.3333333333%
+    }
+
+    .row .col.pull-l10 {
+        right: 83.3333333333%
+    }
+
+    .row .col.push-l10 {
+        left: 83.3333333333%
+    }
+
+    .row .col.offset-l11 {
+        margin-left: 91.6666666667%
+    }
+
+    .row .col.pull-l11 {
+        right: 91.6666666667%
+    }
+
+    .row .col.push-l11 {
+        left: 91.6666666667%
+    }
+
+    .row .col.offset-l12 {
+        margin-left: 100%
+    }
+
+    .row .col.pull-l12 {
+        right: 100%
+    }
+
+    .row .col.push-l12 {
+        left: 100%
+    }
+}
+@media screen {
+    .hide-on-screen {
+        display:none;
+    }
+}
