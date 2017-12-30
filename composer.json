@@ -13,7 +13,8 @@
     "laravel/framework": "5.2.*",
     "lcobucci/jwt": "^3.1",
     "graylog2/gelf-php": "^1.5",
-    "oriceon/oauth-5-laravel": "dev-master"
+    "oriceon/oauth-5-laravel": "dev-master",
+    "stechstudio/laravel-ssh-tunnel": "^1.1"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",
