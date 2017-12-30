@@ -8,18 +8,12 @@
 
     <script>
         function student() {
-            console.log($("#accountType").val());
             if ($("#accountType").val() === 'student') {
                 $("#studentYearDiv").show();
             }
             else {
                 $("#studentYearDiv").hide();
             }
-        }
-
-        function sendForm() {
-            $('input:hidden').removeAttr("required");
-            $('#main-form').submit();
         }
     </script>
 
@@ -31,6 +25,12 @@
             <br/>
 
             <div class="panel-body">
+
+                @if(session()->has('error'))
+                    <div class="z-depth-1 card-panel red white-text" style="max-width:1280px; margin: auto auto auto;">
+                        {{ session()->get('error') }}
+                    </div>
+                @endif
 
                 <div class="z-depth-1 card-panel white" style="max-width:1280px; margin: auto auto auto;">
                     กรุณากรอกข้อมูลตามความเป็นจริง
@@ -125,7 +125,7 @@
                             </div>
 
                             <div id="studentYearDiv" class="input-field col s12">
-                                <select id="studentYear" name="studentYear" required>
+                                <select id="studentYear" name="studentYear">
                                     <option value="" selected disabled>เลือกชั้นปีที่ศึกษา</option>
                                     <option value="p1-3"{{ old('accountType') === 'p1-3' ? " selected" : "" }}>ประถมศึกษาตอนต้น</option>
                                     <option value="p4-6"{{ old('accountType') === 'p4-6' ? " selected" : "" }}>ประถมศึกษาตอนปลาย</option>
@@ -149,34 +149,18 @@
                             </div>
 
                             <div class="input-field col s12">
-                                <select name="interests" multiple required>
-                                    <option value="" selected disabled>เลือกสิ่งที่สนใจ</option>
-                                    @php
-                                        $interests = collect(old('interests', []));
-                                    @endphp
-                                    <option value="tag_1"{{ $interests->contains('tag_1') ? " selected" : "" }}>Tag 1</option>
-                                    <option value="tag_2"{{ $interests->contains('tag_2') ? " selected" : "" }}>Tag 2</option>
-                                    <option value="tag_3"{{ $interests->contains('tag_3') ? " selected" : "" }}>Tag 3</option>
-                                    <option value="tag_4"{{ $interests->contains('tag_4') ? " selected" : "" }}>Tag 4</option>
-                                </select>
-
-                                <label>สิ่งที่สนใจ</label>
-
-                                @if ($errors->has('interests'))
+                                <input name="schoolName" type="text" id="autocomplete-input" class="autocomplete">
+                                <label for="autocomplete-input">โรงเรียน</label>
+                                @if ($errors->has('schoolName'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('interests') }}</strong>
+                                        <strong>{{ $errors->first('schoolName') }}</strong>
                                         <br/>
                                         <br/>
                                     </span>
                                 @endif
                             </div>
 
-                            <div class="input-field col s12">
-                                <input type="text" id="autocomplete-input" class="autocomplete">
-                                <label for="autocomplete-input">โรงเรียน</label>
-                            </div>
-
-                            <button type="button" onclick="sendForm();" class="btn waves-effect waves-light blue" style="margin-top: 32px;">
+                            <button class="btn waves-effect waves-light" type="submit" style="margin-top: 32px;">
                                 ลงทะเบียน
                             </button>
 

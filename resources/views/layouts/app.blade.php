@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - ต.อ. นิทรรศน์ ๘ ทศวรรษเตรียมอุดมศึกษา</title>
+    <title>@yield('title') - ต.อ. นิทรรศ ๘ ทศวรรษเตรียมอุดมศึกษา</title>
 
     <style>
         body {
@@ -40,10 +40,10 @@
     <div class="nav-wrapper container">
         @if(!Request::is('/'))<a id="logo-container" href="/" class="brand-logo white-text" style="font-size: 2rem;">ต.อ. นิทรรศน์ฯ</a>@endif
         <ul class="right hide-on-med-and-down">
-            <li{{ Request::is('/') ? " class=active" : '' }}><a href="/">หน้าแรก</a></li>
-            <li{{ Request::is('/contact') ? " class=active" : '' }}><a href="/contact/">ติดต่อสอบถาม</a></li>
+            <li{{ Route::current()->getName() == 'index' ? " class=active" : '' }}><a href="/">หน้าแรก</a></li>
+            <li{{ Route::current()->getName() == 'contact' ? " class=active" : '' }}><a href="/contact/">ติดต่อสอบถาม</a></li>
             @if(!\App\Http\Controllers\UserController::isLoggedIn())
-                <li{{ Request::is('/login') ? " class=active" : '' }}><a href="/login/">เข้าสู่ระบบ</a></li>
+                <li{{ Route::current()->getName() == 'login' ? " class=active" : '' }}><a href="/login/">เข้าสู่ระบบ</a></li>
             @else
                 <li><a href="/logout/">ออกจากระบบ</a></li>
             @endif

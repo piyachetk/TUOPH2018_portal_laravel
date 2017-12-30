@@ -17,12 +17,12 @@ class Authenticate
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (!$request->session()->has('userid')) {
+        if (!\App\Http\Controllers\UserController::isLoggedIn()) {
             if ($request->ajax() || $request->wantsJson()) {
                 return response('Unauthorized.', 401);
             } else {
 	            $request->session()->set('redirect_queue', $request->fullUrl());
-                return redirect()->guest('login');
+                return redirect()->guest('/login');
             }
         }
 

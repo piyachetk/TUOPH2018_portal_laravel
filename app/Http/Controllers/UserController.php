@@ -23,26 +23,18 @@ class UserController extends Controller
 
     public static function httpPost($url, $params)
     {
-        $postData = '';
-        //create name value pairs seperated by &
-        foreach ($params as $k => $v) {
-            $postData .= $k . '=' . $v . '&';
-        }
-        $postData = rtrim($postData, '&');
-
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_HEADER, false);
-        curl_setopt($ch, CURLOPT_POST, count($postData));
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+        curl_setopt($ch, CURLOPT_HEADER, 'Content-Type: application/json');
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($params));
 
         $output = curl_exec($ch);
 
         curl_close($ch);
         return $output;
-
     }
 
     public function loginFacebook(Request $request){
@@ -107,6 +99,11 @@ class UserController extends Controller
     }
 
     public function register(Request $request){
+        if(self::isLoggedIn() && self::getUserData()['registered']){
+            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว สามารถแก้ไข้อมูลได้ผ่านทางแอปพลิเคชั่นเท่านั้น');
+            return redirect()->back();
+        }
+
         $accountType = $request->get('accountType');
         switch($accountType){
             case 'student':
@@ -115,9 +112,8 @@ class UserController extends Controller
                     'firstName' => 'required|max:255',
                     'lastName' => 'required|max:255',
                     'email' => 'required|email|max:255',
-                    'interests.*' => 'max:64',
                     'studentYear' => 'required|in:p1-3,p4-6,m1,m2,m3,m4,m5,m6',
-                    'school' => 'required|max:255',
+                    'schoolName' => 'required|max:255',
                 ]);
                 $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
                     'prefix' => $request->get('prefix'),
@@ -125,9 +121,10 @@ class UserController extends Controller
                     'lastName' => $request->get('lastName'),
                     'email' => $request->get('email'),
                     'accountType' => $request->get('accountType'),
-                    'interests' => $request->get('interests'),
-                    'studentYear' => $request->get('prefix'),
-                    'school' => $request->get('school'),
+                    'studentYear' => $request->get('studentYear'),
+                    'schoolName' => $request->get('schoolName'),
+                    'interests' => [],
+                    'access_token' => session()->get('access_token'),
                 ]);
                 break;
             case 'teacher':
@@ -136,8 +133,7 @@ class UserController extends Controller
                     'firstName' => 'required|max:255',
                     'lastName' => 'required|max:255',
                     'email' => 'required|email|max:255',
-                    'interests.*' => 'max:64',
-                    'school' => 'required|max:255',
+                    'schoolName' => 'required|max:255',
                 ]);
                 $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
                     'prefix' => $request->get('prefix'),
@@ -145,16 +141,25 @@ class UserController extends Controller
                     'lastName' => $request->get('lastName'),
                     'email' => $request->get('email'),
                     'accountType' => $request->get('accountType'),
-                    'interests' => $request->get('interests'),
-                    'school' => $request->get('school'),
+                    'schoolName' => $request->get('schoolName'),
+                    'interests' => [],
+                    'access_token' => session()->get('access_token'),
                 ]);
                 break;
             default:
-                return redirect()->back()->withErrors([
-                    'accountType' => 'ประเภทของบัญชีไม่ตรงรูปแบบบ'
-                ]);
+                session()->flash('error', 'ประเภทของบัญชีไม่ถูกรูปแบบ');
+                return redirect()->back();
         }
 
-        return array_key_exists('error', $result) ? redirect()->back() : redirect('/register/success');
+        $json = json_decode($result, true);
+
+        if(array_key_exists('error', $json)){
+            session()->flash('error', 'มีข้อผิดพลาดที่ไม่สามารถระบุได้ กรุณาติดต่อผู้ดูแลระบบ');
+            return redirect()->back();
+        }
+        else{
+            session()->flash('status', 'ลงทะเบียนสำเร็จ');
+            return redirect('/');
+        }
     }
 }

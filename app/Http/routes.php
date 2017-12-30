@@ -11,27 +11,35 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    Route::get('/', function () {
-        return view('index');
-    });
+Route::get('/', ['as' => 'index', function () {
+    return view('index');
+}]);
+
+Route::group(['middleware' => ['guest-only']], function () {
+    Route::get('/login', ['as' => 'login', function(){
+        return view('login');
+    }]);
     Route::get('/login/facebook', 'UserController@loginFacebook');
     Route::get('/login/google', 'UserController@loginGoogle');
+});
+
+Route::group(['middleware' => ['auth']], function () {
     Route::get('/logout', function(){
         session()->flush();
         return redirect('/');
     });
-});
-
-Route::group(['middleware' => ['web', 'auth']], function () {
     Route::get('/register', function () {
+        if(\App\Http\Controllers\UserController::isLoggedIn() && \App\Http\Controllers\UserController::getUserData()['registered']){
+            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว สามารถแก้ไข้อมูลได้ผ่านทางแอปพลิเคชั่นเท่านั้น');
+            return redirect()->back();
+        }
         return view('register');
     });
     Route::post('/register', 'UserController@register');
 });
 
 /*
-Route::group(['middleware' => ['web', 'admin']], function () {
+Route::group(['middleware' => ['admin']], function () {
     
 });
 */
