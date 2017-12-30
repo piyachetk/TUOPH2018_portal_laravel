@@ -77,7 +77,7 @@ class UserController extends Controller
 
             $google_access_token = $token->getAccessToken();
 
-            $result = self::httpGet('https://openhouse.buffalolarity.com/api/token?type=fb&access_token=' . $google_access_token);
+            $result = self::httpGet('https://openhouse.buffalolarity.com/api/token?type=google&access_token=' . $google_access_token);
             $json = json_decode($result, true);
             $access_token = $json['access_token'];
 
@@ -93,7 +93,6 @@ class UserController extends Controller
 
     public static function isLoggedIn(){
         $access_token = session()->get('access_token');
-        \Log::info($access_token);
         return !is_null($access_token);
     }
 
