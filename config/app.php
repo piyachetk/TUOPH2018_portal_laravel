@@ -156,8 +156,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Artdarek\OAuth\OAuthServiceProvider::class,
-        STS\Tunneler\TunnelerServiceProvider::class,
+        Artdarek\OAuth\OAuthServiceProvider::class
     ],
 
     /*
