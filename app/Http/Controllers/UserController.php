@@ -2,11 +2,49 @@
 
 namespace App\Http\Controllers;
 
-use \App\Account;
+use OAuth\OAuth2\Token\StdOAuth2Token;
 use \Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+
+    public static function httpGet($url)
+    {
+        $ch = curl_init();
+
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $output = curl_exec($ch);
+
+        curl_close($ch);
+        return $output;
+    }
+
+    public static function httpPost($url, $params)
+    {
+        $postData = '';
+        //create name value pairs seperated by &
+        foreach ($params as $k => $v) {
+            $postData .= $k . '=' . $v . '&';
+        }
+        $postData = rtrim($postData, '&');
+
+        $ch = curl_init();
+
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_POST, count($postData));
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+
+        $output = curl_exec($ch);
+
+        curl_close($ch);
+        return $output;
+
+    }
+
     public function loginFacebook(Request $request){
         $code = $request->get('code');
         $facebookService = \OAuth::consumer('Facebook');
@@ -14,30 +52,13 @@ class UserController extends Controller
         if (!is_null($code)) {
             $token = $facebookService->requestAccessToken($code);
 
-            // Send a request with it
-            $data = json_decode($facebookService->request('/me'), true);
-            $data['picture']['data']['url'] = 'https://graph.facebook.com/' . $data['id'] . '/picture?type=large&width=720&height=720';
+            $fb_access_token = $token->getAccessToken();
 
-            //Do something with user
-            $user = Account::where('ref_no', '=', 'fb' . ':' . $data['id'])->first();
-            if ($user == null) {
-                $user = Account::create([
-                    'firstName' => array_key_exists('first_name', $data) ? $data['first_name'] : null,
-                    'lastName' => array_key_exists('last_name', $data) ? $data['last_name'] : null,
-                    'gender' => array_key_exists('gender', $data) ? $data['gender'] : null,
-                    'email' => array_key_exists('email', $data) ? $data['email'] : null,
-                    'picture' => array_key_exists('picture', $data) ? $data['picture']['data']['url'] : null,
-                    'ref_no' => 'fb' . ':' . $data['id'],
-                    'scanned' => []
-                ]);
-            } else {
-                $user->fill([
-                    'picture' => array_key_exists('picture', $data) ? $data['picture']['data']['url'] : null
-                ]);
-                $user->save();
-            }
+            $result = self::httpGet('https://openhouse.buffalolarity.com/api/token?type=fb&access_token=' . $fb_access_token);
+            $json = json_decode($result, true);
+            $access_token = $json['access_token'];
 
-            $request->session()->put('id', $user->id);
+            session()->put('access_token', $access_token);
 
             return redirect('/');
         }
@@ -54,45 +75,13 @@ class UserController extends Controller
         if (!is_null($code)) {
             $token = $googleService->requestAccessToken($code);
 
-            // Send a request with it
-            $json = json_decode($googleService->request('https://www.googleapis.com/oauth2/v1/userinfo'), true);
+            $google_access_token = $token->getAccessToken();
 
-            //Do something with $result
-            $data = [];
+            $result = self::httpGet('https://openhouse.buffalolarity.com/api/token?type=fb&access_token=' . $google_access_token);
+            $json = json_decode($result, true);
+            $access_token = $json['access_token'];
 
-            $data['id'] = $json['id'];
-            $data['first_name'] = $json['given_name'];
-            $data['last_name'] = $json['family_name'];
-            $data['gender'] = $json['gender'];
-
-            $data['picture'] = [
-                'data' => [
-                    'url' => $json['picture']
-                ]
-            ];
-
-            $data['email'] = $json['email'];
-
-            //Do something with user
-            $user = Account::where('ref_no', '=', 'google' . ':' . $data['id'])->first();
-            if ($user == null) {
-                $user = Account::create([
-                    'firstName' => array_key_exists('first_name', $data) ? $data['first_name'] : null,
-                    'lastName' => array_key_exists('last_name', $data) ? $data['last_name'] : null,
-                    'gender' => array_key_exists('gender', $data) ? $data['gender'] : null,
-                    'email' => array_key_exists('email', $data) ? $data['email'] : null,
-                    'picture' => array_key_exists('picture', $data) ? $data['picture']['data']['url'] : null,
-                    'ref_no' => 'google' . ':' . $data['id'],
-                    'scanned' => []
-                ]);
-            } else {
-                $user->fill([
-                    'picture' => array_key_exists('picture', $data) ? $data['picture']['data']['url'] : null
-                ]);
-                $user->save();
-            }
-
-            $request->session()->put('id', $user->id);
+            session()->put('access_token', $access_token);
 
             return redirect('/');
         }
@@ -100,5 +89,73 @@ class UserController extends Controller
             $url = $googleService->getAuthorizationUri();
             return redirect((string)$url);
         }
+    }
+
+    public static function isLoggedIn(){
+        $access_token = session()->get('access_token');
+        \Log::info($access_token);
+        return !is_null($access_token);
+    }
+
+    public static function getUserData(){
+        $access_token = session()->get('access_token');
+
+        if (is_null($access_token)) return null;
+
+        $result = self::httpGet('https://openhouse.buffalolarity.com/api/me?access_token=' . $access_token);
+        $json = json_decode($result, true);
+        return $json;
+    }
+
+    public function register(Request $request){
+        $accountType = $request->get('accountType');
+        switch($accountType){
+            case 'student':
+                $this->validate($request, [
+                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl',
+                    'firstName' => 'required|max:255',
+                    'lastName' => 'required|max:255',
+                    'email' => 'required|email|max:255',
+                    'interests.*' => 'max:64',
+                    'studentYear' => 'required|in:p1-3,p4-6,m1,m2,m3,m4,m5,m6',
+                    'school' => 'required|max:255',
+                ]);
+                $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
+                    'prefix' => $request->get('prefix'),
+                    'firstName' => $request->get('firstName'),
+                    'lastName' => $request->get('lastName'),
+                    'email' => $request->get('email'),
+                    'accountType' => $request->get('accountType'),
+                    'interests' => $request->get('interests'),
+                    'studentYear' => $request->get('prefix'),
+                    'school' => $request->get('school'),
+                ]);
+                break;
+            case 'teacher':
+                $this->validate($request, [
+                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl',
+                    'firstName' => 'required|max:255',
+                    'lastName' => 'required|max:255',
+                    'email' => 'required|email|max:255',
+                    'interests.*' => 'max:64',
+                    'school' => 'required|max:255',
+                ]);
+                $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
+                    'prefix' => $request->get('prefix'),
+                    'firstName' => $request->get('firstName'),
+                    'lastName' => $request->get('lastName'),
+                    'email' => $request->get('email'),
+                    'accountType' => $request->get('accountType'),
+                    'interests' => $request->get('interests'),
+                    'school' => $request->get('school'),
+                ]);
+                break;
+            default:
+                return redirect()->back()->withErrors([
+                    'accountType' => 'ประเภทของบัญชีไม่ตรงรูปแบบบ'
+                ]);
+        }
+
+        return array_key_exists('error', $result) ? redirect()->back() : redirect('/register/success');
     }
 }

@@ -42,11 +42,21 @@
         <ul class="right hide-on-med-and-down">
             <li{{ Request::is('/') ? " class=active" : '' }}><a href="/">หน้าแรก</a></li>
             <li{{ Request::is('/contact') ? " class=active" : '' }}><a href="/contact/">ติดต่อสอบถาม</a></li>
+            @if(!\App\Http\Controllers\UserController::isLoggedIn())
+                <li{{ Request::is('/login') ? " class=active" : '' }}><a href="/login/">เข้าสู่ระบบ</a></li>
+            @else
+                <li><a href="/logout/">ออกจากระบบ</a></li>
+            @endif
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-            <li class="active"><a class="center" href="/">หน้าแรก</a></li>
+            <li><a class="center" href="/">หน้าแรก</a></li>
             <li><a class="center" href="/contact/">ติดต่อสอบถาม</a></li>
+            @if(!\App\Http\Controllers\UserController::isLoggedIn())
+                <li><a class="center" href="/login/">เข้าสู่ระบบ</a></li>
+            @else
+                <li><a class="center" href="/logout/">ออกจากระบบ</a></li>
+            @endif
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>

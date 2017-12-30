@@ -25,6 +25,9 @@
                 <div class="col s12 m9">
                     <h5 class="center">Under Construction</h5>
                     <p class="center">โปรดติดต่อ<a href="mailto:piyachetk@gmail.com">ผู้ดูแลระบบเว็บไซต์งานกิจกรรมพัฒนาผู้เรียน</a></p>
+                    @if(\App\Http\Controllers\UserController::isLoggedIn())
+                        <p class="center">Your ID is {{ \App\Http\Controllers\UserController::getUserData()['id'] }}</p>
+                    @endif
                 </div>
             </div>
         </div>
