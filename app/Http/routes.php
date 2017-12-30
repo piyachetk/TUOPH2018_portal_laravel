@@ -17,6 +17,10 @@ Route::group(['middleware' => ['web']], function () {
     });
     Route::get('/login/facebook', 'UserController@loginFacebook');
     Route::get('/login/google', 'UserController@loginGoogle');
+    Route::get('/logout', function(){
+        session()->flush();
+        return redirect('/');
+    });
 });
 
 Route::group(['middleware' => ['web', 'auth']], function () {
