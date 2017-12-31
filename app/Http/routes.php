@@ -15,6 +15,19 @@ Route::get('/', ['as' => 'index', function () {
     return view('index');
 }]);
 
+Route::get('/redirectApp', function () {
+    $agent = new Jenssegers\Agent\Agent();
+    if ($agent->isAndroidOS()){
+        return redirect('Play Store Link');
+    }
+    else if ($agent->isiOS()){
+        return redirect('App Store Link');
+    }
+    else{
+        echo "Application is only available for Android and iOS";
+    }
+});
+
 Route::group(['middleware' => ['guest-only']], function () {
     Route::get('/login', ['as' => 'login', function(){
         return view('login');

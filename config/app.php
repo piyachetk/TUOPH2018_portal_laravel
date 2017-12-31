@@ -156,7 +156,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Artdarek\OAuth\OAuthServiceProvider::class
+        Artdarek\OAuth\OAuthServiceProvider::class,
+        Jenssegers\Agent\AgentServiceProvider::class,
+
     ],
 
     /*
@@ -204,6 +206,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'OAuth'     => Artdarek\OAuth\Facade\OAuth::class,
+        'Agent' => Jenssegers\Agent\Facades\Agent::class,
     ],
 
 ];

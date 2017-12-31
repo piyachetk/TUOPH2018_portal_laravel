@@ -14,7 +14,8 @@
     "lcobucci/jwt": "^3.1",
     "graylog2/gelf-php": "^1.5",
     "oriceon/oauth-5-laravel": "dev-master",
-    "stechstudio/laravel-ssh-tunnel": "^1.1"
+    "stechstudio/laravel-ssh-tunnel": "^1.1",
+    "jenssegers/agent": "^2.6"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",

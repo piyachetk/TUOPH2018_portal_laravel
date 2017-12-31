@@ -28,21 +28,22 @@
             </div>
         @endif
 
-        <div class="z-depth-1 card-panel white" style="max-width:800px;margin: 3rem auto auto;">
-            <div class="row">
-                <div class="col s12 m3 center-align">
-                    <br />
-                    <i class="large material-icons black-text">build</i><br/>
-                </div>
-                <div class="col s12 m9">
-                    <h5 class="center">Under Construction</h5>
-                    <p class="center">โปรดติดต่อ<a href="mailto:piyachetk@gmail.com">ผู้ดูแลระบบเว็บไซต์งานกิจกรรมพัฒนาผู้เรียน</a></p>
-                    @if(\App\Http\Controllers\UserController::isLoggedIn())
-                        <p class="center">Your ID is {{ \App\Http\Controllers\UserController::getUserData()['id'] }}</p>
+        @if(\App\Http\Controllers\UserController::isLoggedIn())
+            <div class="z-depth-1 card-panel white" style="max-width:800px;margin: 3rem auto auto;">
+                <div class="row">
+                    <h4 class="col s12">ลงทะเบียน</h4>
+                    @if(\App\Http\Controllers\UserController::getUserData()['registered'])
+                        <p class="col s12">คุณได้ลงทะเบียนเรียบร้อยแล้ว สามารถแก้ไขข้อมูลได้ผ่านทางแอปพลิเคชั่น</p>
+                        <a class="right waves-effect waves-light btn" href="/redirectApp">ดาวน์โหลด</a>
+                    @else
+                        <p class="col s12">คุณยังไม่ได้ลงทะเบียน กดปุ่มต่อไปนี้เพื่อทำการลงทะเบียน</p>
+                        <a class="right waves-effect waves-light btn" href="/register">ลงทะเบียน</a>
                     @endif
                 </div>
             </div>
-        </div>
+        @endif
+
+        <!--Information here-->
 
     </div>
     <br><br>
