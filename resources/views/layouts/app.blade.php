@@ -34,16 +34,23 @@
             border-radius: 100%;
         }
 
+        .fullwidth {
+            width: 100%
+        }
+
+        .btn.fullwidth {
+            margin-bottom: 0.3rem
+        }
+
         @yield('style')
     </style>
 </head>
 <body>
 <nav class="pink lighten-2" role="navigation">
     <div class="nav-wrapper container">
-        @if(!Request::is('/'))<a id="logo-container" href="/" class="brand-logo white-text" style="font-size: 2rem;">ต.อ. นิทรรศน์ฯ</a>@endif
+        @if(!Request::is('/'))<a id="logo-container" href="/" class="brand-logo white-text" style="font-size: 2rem;">ต.อ. นิทรรศ</a>@endif
         <ul class="right hide-on-med-and-down">
             <li{{ Route::current()->getName() == 'index' ? " class=active" : '' }}><a href="/">หน้าแรก</a></li>
-            <li{{ Route::current()->getName() == 'contact' ? " class=active" : '' }}><a href="/contact/">ติดต่อสอบถาม</a></li>
             @if(!\App\Http\Controllers\UserController::isLoggedIn())
                 <li{{ Route::current()->getName() == 'login' ? " class=active" : '' }}><a href="/login/">เข้าสู่ระบบ</a></li>
             @else
