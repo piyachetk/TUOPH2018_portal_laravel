@@ -33,6 +33,8 @@
             margin-right: 5px;
             border-radius: 100%;
         }
+
+        @yield('style')
     </style>
 </head>
 <body>
@@ -96,11 +98,14 @@
 
 <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="/js/materialize.min.js"></script>
+
+@yield('script')
 <script>
     $(document).ready(function(){
         $(".button-collapse").sideNav();
         @yield('startup-js')
     });
 </script>
+
 </body>
 </html>
