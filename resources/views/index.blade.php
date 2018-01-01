@@ -25,29 +25,14 @@
     <div class="section">
 
         @if(session()->has('error'))
-            <div class="z-depth-1 card-panel red white-text" style="max-width:800px; margin: 3rem auto auto;">
+            <div class="z-depth-1 card-panel red white-text" style="max-width:800px; margin: 3rem auto 3rem;">
                 {{ session()->get('error') }}
             </div>
         @endif
 
         @if(session()->has('status'))
-            <div class="z-depth-1 card-panel green white-text" style="max-width:800px; margin: 3rem auto auto;">
+            <div class="z-depth-1 card-panel green white-text" style="max-width:800px; margin: 3rem auto 3rem;">
                 {{ session()->get('status') }}
-            </div>
-        @endif
-
-        @if(\App\Http\Controllers\UserController::isLoggedIn())
-            <div class="z-depth-1 card-panel white" style="max-width:800px;margin: 3rem auto auto;">
-                <div class="row">
-                    <h4 class="col s12">ลงทะเบียน</h4>
-                    @if(\App\Http\Controllers\UserController::getUserData()['registered'])
-                        <p class="col s12">คุณได้ลงทะเบียนเรียบร้อยแล้ว สามารถแก้ไขข้อมูลได้ผ่านทางแอปพลิเคชั่น</p>
-                        <a class="right waves-effect waves-light btn" href="/redirectApp">ดาวน์โหลด</a>
-                    @else
-                        <p class="col s12">คุณยังไม่ได้ลงทะเบียน กดปุ่มต่อไปนี้เพื่อทำการลงทะเบียน</p>
-                        <a class="right waves-effect waves-light btn" href="/register">ลงทะเบียน</a>
-                    @endif
-                </div>
             </div>
         @endif
 
@@ -61,7 +46,15 @@
                 <p style="font-size:1rem">
                     ท่านสามารถลงทะเบียนเพื่อรับเกียรติบัตรในการเข้าร่วมงาน โดยท่านสามารถเข้าถึงงานนิทรรศการได้มากขึ้นผ่าน<a href="/redirectApp">แอปพลิเคชั่น</a>
                 </p>
-                <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณสามารถลงทะเบียนเมื่อเข้าสู่ระบบแล้วเท่านั้น</a>
+                @if(\App\Http\Controllers\UserController::isLoggedIn())
+                    @if(!\App\Http\Controllers\UserController::getUserData()['registered'])
+                        <a href="/register" class="waves-effect waves-light btn blue fullwidth">ลงทะเบียน</a>
+                    @else
+                        <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณได้ลงทะเบียนแล้ว</a>
+                    @endif
+                @else
+                    <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณสามารถลงทะเบียนเมื่อเข้าสู่ระบบแล้วเท่านั้น</a>
+                @endif
             </div>
 
             <br/>

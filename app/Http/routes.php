@@ -43,7 +43,7 @@ Route::group(['middleware' => ['auth']], function () {
     });
     Route::get('/register', function () {
         if(\App\Http\Controllers\UserController::isLoggedIn() && \App\Http\Controllers\UserController::getUserData()['registered']){
-            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว สามารถแก้ไข้อมูลได้ผ่านทางแอปพลิเคชั่นเท่านั้น');
+            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว สามารถแก้ไขข้อมูลได้ผ่านทางแอปพลิเคชั่นเท่านั้น');
             return redirect()->back();
         }
         return view('register');
