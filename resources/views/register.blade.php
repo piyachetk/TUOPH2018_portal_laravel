@@ -33,7 +33,7 @@
                 @endif
 
                 <div class="z-depth-1 card-panel white" style="max-width:1280px; margin: auto auto auto;">
-                    กรุณากรอกข้อมูลตามความเป็นจริง
+                    กรุณากรอกข้อมูลเป็น<em>ภาษาไทย</em> ตามความเป็นจริงทุกช่อง
                 </div>
 
                 <br/>
@@ -49,11 +49,11 @@
                             <div class="input-field col s12">
                                 <select name="prefix" required>
                                     <option value="" selected disabled>เลือกคำนำหน้าชื่อ</option>
-                                    <option value="mr"{{ old('prefix') === 'mr' ? " selected" : "" }}>นาย</option>
-                                    <option value="mrs"{{ old('prefix') === 'mrs' ? " selected" : "" }}>นาง</option>
-                                    <option value="miss"{{ old('prefix') === 'miss' ? " selected" : "" }}>นางสาว</option>
                                     <option value="master-boy"{{ old('prefix') === 'master-boy' ? " selected" : "" }}>เด็กชาย</option>
                                     <option value="master-girl"{{ old('prefix') === 'master-girl' ? " selected" : "" }}>เด็กหญิง</option>
+                                    <option value="mr"{{ old('prefix') === 'mr' ? " selected" : "" }}>นาย</option>
+                                    <option value="miss"{{ old('prefix') === 'miss' ? " selected" : "" }}>นางสาว</option>
+                                    <option value="mrs"{{ old('prefix') === 'mrs' ? " selected" : "" }}>นาง</option>
                                 </select>
 
                                 <label>คำนำหน้าชื่อ</label>
@@ -108,12 +108,13 @@
 
                             <div class="input-field col s12">
                                 <select id="accountType" name="accountType" required>
-                                    <option value="" selected disabled>เลือกประเภทบัญชี</option>
+                                    <option value="" selected disabled>เลือกประเภท</option>
                                     <option value="student"{{ old('accountType') === 'student' ? " selected" : "" }}>นักเรียน</option>
                                     <option value="teacher"{{ old('accountType') === 'teacher' ? " selected" : "" }}>ครู</option>
+                                    {{-- TODO: Add options for 'ผู้ปกครอง', 'นักศึกษา' --}}
                                 </select>
 
-                                <label>ประเภทบัญชี</label>
+                                <label>ประเภท</label>
 
                                 @if ($errors->has('accountType'))
                                     <span class="help-block">
@@ -150,7 +151,7 @@
 
                             <div class="input-field col s12">
                                 <input name="schoolName" type="text" id="autocomplete-input" class="autocomplete">
-                                <label for="autocomplete-input">โรงเรียน</label>
+                                <label for="autocomplete-input">โรงเรียน (ไม่ต้องมีคำว่า'โรงเรียน')</label>
                                 @if ($errors->has('schoolName'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('schoolName') }}</strong>
