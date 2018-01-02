@@ -54,6 +54,7 @@
                                     <option value="mr"{{ old('prefix') === 'mr' ? " selected" : "" }}>นาย</option>
                                     <option value="miss"{{ old('prefix') === 'miss' ? " selected" : "" }}>นางสาว</option>
                                     <option value="mrs"{{ old('prefix') === 'mrs' ? " selected" : "" }}>นาง</option>
+                                    {{-- TODO: Add option for "others", Edit placeholder to "อื่นๆ (โปรดระบุในช่องต่อไป ติดกับชื่อ)" --}}
                                 </select>
 
                                 <label>คำนำหน้าชื่อ</label>

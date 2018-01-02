@@ -28,6 +28,15 @@
             font-size: small;
         }
 
+        #s-intro {
+            font-family: "Kanit-light", "Prompt", sans-serif;
+
+        }
+
+        .btn.login {
+            background-color: #ce2965;
+        }
+
         .externalLinkImg {
             width: 32px;
             height: 32px;
