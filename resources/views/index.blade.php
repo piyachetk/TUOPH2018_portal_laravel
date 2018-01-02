@@ -9,11 +9,24 @@
 @endsection
 
 @section("pre-content")
+    <div id="header">
+        <div class="container">
+            <div class="th">
+                <h3 class="title left-item">ต.อ. นิทรรศ</h3>
+                <h3 class="subtitle right-item">๘ ทศวรรษ<wbr><span class="nobr">เตรียมอุดมศึกษา</span></h3>
+            </div>
+            <h3 class="title">Triam Udom <span class="nobr">Open House</span></h3>
+            <br />
+            <h4 class="subtitle date">11-13 มกราคม 2561</h4>
+        </div>
+    </div>
+    {{--
     <div class="pink lighten-2 white-text" style="padding-top:60px;padding-bottom:40px;line-height:2.5rem;">
         <div class="container center">
             <h3 style="line-height: 150% !important;">ต.อ. นิทรรศ ๘ ทศวรรษเตรียมอุดมศึกษา</h3>
         </div>
     </div>
+    --}}
 @endsection
 
 @section("content")
@@ -32,9 +45,9 @@
     <div class="section center-align fullpage" id="s-intro">
         <div class="container">
             <img class="responsive-img" src="/OpenHouse_Logo.png" alt="Triam Udom Open House Logo" width="360" />
-            <p class="theme-color">งานนิทรรศการที่ยิ่งใหญ่ที่สุดในประวัติศาสตร์โรงเรียนเตรียมอุดมศึกษา<br />
+            <p class="theme-color">งานนิทรรศการที่ยิ่งใหญ่ที่สุดในประวัติศาสตร์โรงเรียน<span class="nobr">เตรียมอุดมศึกษา</span><br />
                 พบกับกิจกรรมที่น่าสนใจต่างๆ อาทิ การแนะนำโรงเรียน การแสดงผลงานนักเรียน นิทรรศการวิชาการ
-                กิจกรรมชมรม การแสดง การแข่งขัน การแนะนำแผนการเรียน และการแนะแนวการศึกษาต่อ</p>
+                กิจกรรมชมรม การแสดง การแข่งขัน การแนะแนวการศึกษาต่อในแต่ละแผนการเรียน</p>
             <p>11-13 มกราคม 2561<br/>
                เวลา 08.00 - 16.00 น.</p>
 
@@ -46,11 +59,10 @@
             --}}
             @if(\App\Http\Controllers\UserController::isLoggedIn())
                 @if(!\App\Http\Controllers\UserController::getUserData()['registered'])
-                    {{-- This should not occur --}}
-                    <a href="/register" class="waves-effect waves-light btn blue fullwidth">ลงทะเบียน</a>
+                    <a href="/register" class="waves-effect waves-light btn login">ลงทะเบียนเข้าร่วมงาน</a>
                 @else
                     {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณได้ลงทะเบียนแล้ว</a> --}}
-                    <a href="/logout" class="waves-effect waves-light btn blue logout">ลงทะเบียนเรียบร้อยแล้ว ออกจากระบบ</a>
+                    <a href="/logout" class="waves-effect waves-light btn indigo darken-3 logout">ลงทะเบียนเรียบร้อยแล้ว ออกจากระบบ</a>
                 @endif
             @else
                 {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณสามารถลงทะเบียนเมื่อเข้าสู่ระบบแล้วเท่านั้น</a> --}}
