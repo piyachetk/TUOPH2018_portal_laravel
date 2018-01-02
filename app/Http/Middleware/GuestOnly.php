@@ -17,7 +17,8 @@ class GuestOnly
     public function handle($request, Closure $next, $guard = null)
     {
         if (\App\Http\Controllers\UserController::isLoggedIn()) {
-            return redirect()->back();
+            session()->flash('error', 'คุณต้องออกจากระบบก่อนจึงจะสามารถเข้าถึงลิงค์ดังกล่าวได้');
+            return redirect('/');
         }
 
         return $next($request);
