@@ -28,14 +28,6 @@ Route::get('/redirectApp', function () {
     }
 });
 
-Route::group(['middleware' => ['guest-only']], function () {
-    Route::get('/login', ['as' => 'login', function(){
-        return view('login');
-    }]);
-    Route::get('/login/facebook', 'UserController@loginFacebook');
-    Route::get('/login/google', 'UserController@loginGoogle');
-});
-
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/logout', function(){
         session()->flush();
@@ -49,6 +41,14 @@ Route::group(['middleware' => ['auth']], function () {
         return view('register');
     });
     Route::post('/register', 'UserController@register');
+});
+
+Route::group(['middleware' => ['guest-only']], function () {
+    Route::get('/login', ['as' => 'login', function(){
+        return view('login');
+    }]);
+    Route::get('/login/facebook', 'UserController@loginFacebook');
+    Route::get('/login/google', 'UserController@loginGoogle');
 });
 
 /*
