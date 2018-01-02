@@ -50,7 +50,7 @@
                     <a href="/register" class="waves-effect waves-light btn blue fullwidth">ลงทะเบียน</a>
                 @else
                     {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณได้ลงทะเบียนแล้ว</a> --}}
-                    <a href="/logout" class="waves-effect waves-light btn teal">ลงทะเบียนเรียบร้อยแล้ว ออกจากระบบ</a>
+                    <a href="/logout" class="waves-effect waves-light btn blue logout">ลงทะเบียนเรียบร้อยแล้ว ออกจากระบบ</a>
                 @endif
             @else
                 {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณสามารถลงทะเบียนเมื่อเข้าสู่ระบบแล้วเท่านั้น</a> --}}

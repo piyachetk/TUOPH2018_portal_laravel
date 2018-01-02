@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use OAuth\OAuth2\Token\StdOAuth2Token;
 use \Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -51,6 +50,7 @@ class UserController extends Controller
             $access_token = $json['access_token'];
 
             session()->put('access_token', $access_token);
+            session()->save();
 
             // Previous: '/'
             return redirect('/register');
@@ -75,6 +75,7 @@ class UserController extends Controller
             $access_token = $json['access_token'];
 
             session()->put('access_token', $access_token);
+            session()->save();
 
             // Previous: '/'
             return redirect('/register');

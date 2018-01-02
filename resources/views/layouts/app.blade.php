@@ -42,7 +42,7 @@
             padding-right: 5%;
         }
 
-        .btn.login {
+        .btn.login, .btn.logout {
             font-family: "Kanit", sans-serif;
             font-size: 1em;
             background-color: #ce2965;
