@@ -15,9 +15,9 @@
                 <h3 class="title left-item">ต.อ. นิทรรศ</h3>
                 <h3 class="subtitle right-item">๘ ทศวรรษ<wbr><span class="nobr">เตรียมอุดมศึกษา</span></h3>
             </div>
-            <h3 class="title">Triam Udom <span class="nobr">Open House</span></h3>
+            <h3 class="title en">Triam Udom <span class="nobr">Open House</span></h3>
             <br />
-            <h4 class="subtitle date">11-13 มกราคม 2561</h4>
+            <h4 class="subtitle date hide-on-small-and-down">11-13 มกราคม 2561</h4>
         </div>
     </div>
     {{--
@@ -62,7 +62,8 @@
                     <a href="/register" class="waves-effect waves-light btn login">ลงทะเบียนเข้าร่วมงาน</a>
                 @else
                     {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณได้ลงทะเบียนแล้ว</a> --}}
-                    <a href="/logout" class="waves-effect waves-light btn indigo darken-3 logout">ลงทะเบียนเรียบร้อยแล้ว ออกจากระบบ</a>
+                    <a href="/logout" class="waves-effect waves-light btn indigo darken-3 logout hide-on-small-only">ลงทะเบียนเรียบร้อยแล้ว ออกจากระบบ</a>
+                    <a href="/logout" class="waves-effect waves-light btn indigo darken-3 logout hide-on-med-and-up">ออกจากระบบ</a>
                 @endif
             @else
                 {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณสามารถลงทะเบียนเมื่อเข้าสู่ระบบแล้วเท่านั้น</a> --}}

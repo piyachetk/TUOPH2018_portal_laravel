@@ -44,6 +44,7 @@
             font-weight: 100;
         }
 
+        /* Desktop and Tablet Devices */
         @media screen and (min-width: 769px) {
             #header {
                 width: 100%;
@@ -72,22 +73,30 @@
             .date { margin-top: 70px; }
         }
 
+        /* Mobile Devices */
         @media screen and (max-width: 768px) {
-            #header .container {
-                width: 100vw;
-                position: relative;
-                left: 50%;
-                right: 50%;
-                margin-left: -50vw;
-                margin-right: -50vw;
-            }
-
             #header {
                 width: 100%;
+                background: #CA849C url("/img/background_small.jpg") no-repeat center center;
+                background-size: cover;
                 position: relative;
+                min-height: 700px;
 
                 text-align: center;
-                color: black;
+                color: white;
+            }
+
+            .th {
+                padding-top: 100px;
+                padding-bottom: 50px;
+            }
+
+            .subtitle {
+                font-size: 2.5em;
+            }
+
+            .en {
+                padding-top: 215px;
             }
         }
 
@@ -96,6 +105,7 @@
             font-weight: 200 !important;
             font-size: 1.4rem !important;
             background-color: #f4f5fa;
+            padding-top: 40px;
             padding-left: 5%;
             padding-right: 5%;
         }
