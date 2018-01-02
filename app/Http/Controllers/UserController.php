@@ -52,7 +52,8 @@ class UserController extends Controller
 
             session()->put('access_token', $access_token);
 
-            return redirect('/');
+            // Previous: '/'
+            return redirect('/register');
         }
         else {
             $url = $facebookService->getAuthorizationUri();
@@ -75,7 +76,8 @@ class UserController extends Controller
 
             session()->put('access_token', $access_token);
 
-            return redirect('/');
+            // Previous: '/'
+            return redirect('/register');
         }
         else {
             $url = $googleService->getAuthorizationUri();

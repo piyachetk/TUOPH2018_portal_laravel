@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="/font/thsarabunnew.css">
+    <link rel="shortcut icon" href="/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -25,6 +26,15 @@
         strong {
             color: red;
             font-size: small;
+        }
+
+        #s-intro {
+            font-family: "Kanit-light", "Prompt", sans-serif;
+
+        }
+
+        .btn.login {
+            background-color: #ce2965;
         }
 
         .externalLinkImg {
@@ -48,11 +58,12 @@
 <body>
 <nav class="pink lighten-2" role="navigation">
     <div class="nav-wrapper container">
-        @if(!Request::is('/'))<a id="logo-container" href="/" class="brand-logo white-text" style="font-size: 2rem;">ต.อ. นิทรรศ</a>@endif
+        @if(!Request::is('/'))<a id="logo-container" href="/" class="brand-logo white-text" style="font-size: 2rem;">ต.อ. นิทรรศ ๘ ทศวรรษเตรียมอุดมศึกษา</a>@endif
         <ul class="right hide-on-med-and-down">
             <li{{ Route::current()->getName() == 'index' ? " class=active" : '' }}><a href="/">หน้าแรก</a></li>
             @if(!\App\Http\Controllers\UserController::isLoggedIn())
-                <li{{ Route::current()->getName() == 'login' ? " class=active" : '' }}><a href="/login/">เข้าสู่ระบบ</a></li>
+                {{-- <li{{ Route::current()->getName() == 'login' ? " class=active" : '' }}><a href="/login/">เข้าสู่ระบบ</a></li> --}}
+                <li{{ Route::current()->getName() == 'login' ? " class=active" : '' }}><a href="/login/">ลงทะเบียน</a></li>
             @else
                 <li><a href="/logout/">ออกจากระบบ</a></li>
             @endif
@@ -60,7 +71,7 @@
 
         <ul id="nav-mobile" class="side-nav">
             <li><a class="center" href="/">หน้าแรก</a></li>
-            <li><a class="center" href="/contact/">ติดต่อสอบถาม</a></li>
+            {{-- TODO: Mobile system redesign --}}
             @if(!\App\Http\Controllers\UserController::isLoggedIn())
                 <li><a class="center" href="/login/">เข้าสู่ระบบ</a></li>
             @else
