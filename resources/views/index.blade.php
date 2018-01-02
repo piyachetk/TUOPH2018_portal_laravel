@@ -29,36 +29,38 @@
         </div>
     @endif
 
-    <div class="section center-align" id="s-intro">
-        <img src="/OpenHouse_Logo.png" alt="Triam Udom Open House Logo" width="360" />
-        <p style="font-size:1.4rem">งานนิทรรศการที่ยิ่งใหญ่ที่สุดในประวัติศาสตร์โรงเรียนเตรียมอุดมศึกษา<br />
-            พบกับกิจกรรมที่น่าสนใจมากมาย อาทิ การแนะนำโรงเรียน การแสดงผลงานนักเรียน นิทรรศการวิชาการ<br />
-            กิจกรรมชมรม การแสดง การแข่งขัน การแนะนำแผนการเรียน และการแนะแนวการศึกษาต่อ</p>
-        <h5>11-13 มกราคม 2561</h5>
-        <h5>เวลา 08.00 - 16.00 น.</h5>
+    <div class="section center-align fullpage" id="s-intro">
+        <div class="container">
+            <img class="responsive-img" src="/OpenHouse_Logo.png" alt="Triam Udom Open House Logo" width="360" />
+            <p class="theme-color">งานนิทรรศการที่ยิ่งใหญ่ที่สุดในประวัติศาสตร์โรงเรียนเตรียมอุดมศึกษา<br />
+                พบกับกิจกรรมที่น่าสนใจต่างๆ อาทิ การแนะนำโรงเรียน การแสดงผลงานนักเรียน นิทรรศการวิชาการ
+                กิจกรรมชมรม การแสดง การแข่งขัน การแนะนำแผนการเรียน และการแนะแนวการศึกษาต่อ</p>
+            <p>11-13 มกราคม 2561<br/>
+               เวลา 08.00 - 16.00 น.</p>
 
-        <br />
-        {{--
-        <p style="font-size:1rem">
-            ท่านสามารถลงทะเบียนเพื่อรับเกียรติบัตรในการเข้าร่วมงาน โดยท่านสามารถเข้าถึงงานนิทรรศการได้มากขึ้นผ่าน<a href="/redirectApp">แอปพลิเคชั่น</a>
-        </p>
-        --}}
-        @if(\App\Http\Controllers\UserController::isLoggedIn())
-            @if(!\App\Http\Controllers\UserController::getUserData()['registered'])
-                {{-- This should not occur --}}
-                <a href="/register" class="waves-effect waves-light btn blue fullwidth">ลงทะเบียน</a>
+            <br />
+            {{--
+            <p style="font-size:1rem">
+                ท่านสามารถลงทะเบียนเพื่อรับเกียรติบัตรในการเข้าร่วมงาน โดยท่านสามารถเข้าถึงงานนิทรรศการได้มากขึ้นผ่าน<a href="/redirectApp">แอปพลิเคชั่น</a>
+            </p>
+            --}}
+            @if(\App\Http\Controllers\UserController::isLoggedIn())
+                @if(!\App\Http\Controllers\UserController::getUserData()['registered'])
+                    {{-- This should not occur --}}
+                    <a href="/register" class="waves-effect waves-light btn blue fullwidth">ลงทะเบียน</a>
+                @else
+                    {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณได้ลงทะเบียนแล้ว</a> --}}
+                    <a href="/logout" class="waves-effect waves-light btn teal">ลงทะเบียนเรียบร้อยแล้ว ออกจากระบบ</a>
+                @endif
             @else
-                {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณได้ลงทะเบียนแล้ว</a> --}}
-                <a href="/logout" class="waves-effect waves-light btn teal">ลงทะเบียนเรียบร้อยแล้ว ออกจากระบบ</a>
+                {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณสามารถลงทะเบียนเมื่อเข้าสู่ระบบแล้วเท่านั้น</a> --}}
+                <a href="/login" class="waves-effect waves-light btn login">ลงทะเบียนเข้าร่วมงาน</a>
             @endif
-        @else
-            {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณสามารถลงทะเบียนเมื่อเข้าสู่ระบบแล้วเท่านั้น</a> --}}
-            <a href="/login" class="waves-effect waves-light btn login">ลงทะเบียนเข้าร่วมงาน</a>
-        @endif
+        </div>
+        <br /><br />
     </div>
 
     <br/>
-    <div class="divider"></div>
 
     {{--
     <div class="section" id="s-exhibition">

@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="/font/thsarabunnew.css">
+    <link type="text/css" rel="stylesheet" href="/font/kanit.css">
     <link rel="shortcut icon" href="/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -28,13 +29,33 @@
             font-size: small;
         }
 
-        #s-intro {
-            font-family: "Kanit-light", "Prompt", sans-serif;
+        .theme-color {
+            color: #e866a6;
+        }
 
+        #s-intro {
+            font-family: "Kanit", sans-serif;
+            font-weight: 200;
+            font-size: 1.4rem;
+            background-color: #f4f5fa;
+            padding-left: 5%;
+            padding-right: 5%;
         }
 
         .btn.login {
+            font-family: "Kanit", sans-serif;
+            font-size: 1em;
             background-color: #ce2965;
+        }
+
+        .fullpage {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            /* margin-left: calc(-50vw + 50%); */
         }
 
         .externalLinkImg {
