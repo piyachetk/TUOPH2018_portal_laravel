@@ -72,68 +72,66 @@
         </div>
         <br /><br />
     </div>
-
     <br/>
 
-    {{--
     <div class="section" id="s-exhibition">
-        <h4 class="center">นิทรรศการ</h4>
+        <h4 class="center theme-color">นิทรรศการ</h4>
         <br/>
+
         <div class="row" style="line-height: 32px;">
             <div class="col s12 m4">
-                <!--b>หน้าตึก 60 ปี</b><br/-->
-                แผนการเรียนภาษา-คณิต<br/>
-                แผนการเรียนภาษา-จีน<br/>
-                แผนการเรียนภาษา-ญีปุ่น<br/>
-                แผนการเรียนภาษา-สเปน<br/>
-                แผนการเรียนภาษา-เยอรมัน<br/>
-                แผนการเรียนภาษา-ฝรั่งเศส<br/>
-                ชมรมสันทนากร<br/>
-                ชมรมวรรณศิลป์ ต.อ.<br/>
-                ชมรมสิ่งละอันพันละน้อย<br/>
-                ชมรมเพาะพันธุ์ไม้<br/>
-                ชมรมอนุรักษ์ธรรมชาติ<br/>
-                ชมรมผู้บำเพ็ญประโยชน์<br/>
-                ชมรมครอสเวิร์ด
+                แผนการเรียนวิทย์คณิต	<br/>
+                แผนการเรียนวิทย์คณิต-ฝรั่งเศส	<br/>
+                แผนการเรียนวิทย์คณิต-เยอรมัน	<br/>
+                แผนการเรียนวิทย์คณิต-สเปน	<br/>
+                แผนการเรียนวิทย์คณิต-ญี่ปุ่น	<br/>
+                แผนการเรียนวิทย์คณิต-จีน	<br/>
+                แผนการเรียนวิทย์คณิต-เกาหลี	<br/>
+                ห้องเรียนพิเศษคณิตศาสตร์	<br/>
+                ห้องเรียนพิเศษวิทยาศาสตร์	<br/>
+                ชมรมวิทยาศาสตร์	<br/>
+                ชมรมสังคมศึกษา	<br/>
+                ชมรมภาษาไทย	<br/>
+                ชมรมห้องสมุด	<br/>
+                ชมรมศาสนาและวัฒนธรรมไทย	<br/>
+                ชมรมวาทศิลป์	<br/>
             </div>
             <div class="col s12 m4">
-                <!--b>หลังตึก 60 ปี</b><br/-->
-                ชมรมค้นพบตัวเอง<br/>
-                <!--b>หน้าตึกเฉลิมพระเกียรติ 72 พรรษา</b><br/-->
-                ห้องเรียนพิเศษคณิตศาสตร์<br/>
-                ห้องเรียนพิเศษวิทยาศาสตร์<br/>
-                โครงการความสามารถพิเศษภาษาอังกฤษ
-                <!--b>หลังห้องสมุด</b><br/-->
-                แผนการเรียนวิทย์-คอมพิวเตอร์<br/>
-                แผนการเรียนวิทย์-คุณภาพชีวิต<br/>
-                แผนการเรียนวิทย์-คณิตศาสตร์ประยุกต์<br/>
-                แผนการเรียนวิทย์-บริหารจัดการ<br/>
-                แผนการเรียนวิทย์-ภาษาจีน<br/>
-                แผนการเรียนวิทย์-ภาษาญี่ปุ่น<br/>
-                แผนการเรียนวิทย์-ภาษาเยอรมัน<br/>
-                แผนการเรียนวิทย์-ภาษาฝรั่งเศส<br/>
-                ชมรมการ์ตูน<!-- M -->
+                แผนการเรียนภาษา-คณิต	<br/>
+                แผนการเรียนภาษา-ฝรั่งเศส	<br/>
+                แผนการเรียนภาษา-เยอรมัน	<br/>
+                แผนการเรียนภาษา-สเปน	<br/>
+                แผนการเรียนภาษา-ญี่ปุ่น	<br/>
+                แผนการเรียนภาษา-จีน	<br/>
+                แผนการเรียนภาษา-เกาหลี	<br/>
+                โครงการความสามารถพิเศษภาษาไทย	<br/>
+                โครงการความสามารถพิเศษภาษาอังกฤษ	<br/>
+                ชมรมวรรณศิลป์ ต.อ.	<br/>
+                ชมรมศิลปะ	<br/>
+                ชมรมผู้บำเพ็ญประโยชน์	<br/>
+                ชมรมผู้นำเยาวชน	<br/>
+                ชมรมอนุรักษ์ธรรมชาติ	<br/>
+                ชมรมเพาะพันธุ์ไม้	<br/>
             </div>
             <div class="col s12 m4">
-                <!--b>ลานอเนกประสงค์ 70 ปีต.อ.</b><br/-->
-                ชมรมนาฏศิลป์<br/>
-                ชมรมดนตรีไทย<br/>
-                <!--b>หน้าหอประชุมใหญ่-ตึกปฏิบัติการวิทยาศาสตร์</b><br/-->
-                ชมรมนิเทศศิลป<br/>
-                ชมรมสร้างสรรค์หนังสือ<br/>
-                กลุ่มนักเรียนเอไอซี<br/>
-                ตลาดหลักทรัพย์แห่งประเทศไทย<br/>
-                ชมรมถ่ายภาพ<br/>
-                <!--b>ลานจามจุรีศรีโพธิ์</b><br/-->
-                ชมรมศาสนาและวัฒนธรรมไทย<br/>
-                ชมรมผู้นำเยาวชนสาธารณสุขฯ<br/>
-                <!--b>สนามหญ้าระหว่างตึก 1 และตึก 2</b><br/-->
-                โครงการความสามารถพิเศษภาษาไทย<br/>
-                งานแนะแนว<br/>
-                ชมรมสีสรรพ์ภาษาต่างประเทศที่ 2<br/>
-                ชมรมห้องสมุด<!-- M -->
+                ชมรมครอสเวิร์ด	<br/>
+                ชมรมถ่ายภาพ	<br/>
+                ชมรมสิ่งละพันอันละน้อย	<br/>
+                ชมรมค้นพบตนเอง	<br/>
+                ชมรมสร้างสรรค์หนังสือ	<br/>
+                ชมรมการ์ตูน	<br/>
+                ชมรมนิเทศศิลป	<br/>
+                ชมรมของเล่นเพื่อการเรียนรู้	<br/>
+                ชมรมเศรษฐศาสตร์	<br/>
+                ชมรมโลกทั้งระบบ	<br/>
+                ชมรมโลกศาสตร์	<br/>
+                ชมรมสีสรรพ์ภาษาต่างประเทศที่ 2	<br/>
+                คณะกรรมการนักเรียน	<br/>
+                กลุ่มนักเรียนเอไอซี	<br/>
+                งานแนะแนว	<br/>
             </div>
         </div>
+        {{--
         <div class="row">
             <div class="col s12 m6">
                 <a href="/plan-auditorium.jpg" class="waves-effect waves-light btn fullwidth green">บริเวณหอประชุม</a>
@@ -148,83 +146,105 @@
                 <a href="/plan-60.jpg" class="waves-effect waves-light btn fullwidth cyan">บริเวณหน้าตึก 60 ปี</a>
             </div>
         </div>
+        --}}
     </div>
     <div class="divider"></div>
-    --}}
 
-    {{--
-    <div class="section center-align" id="s-show">
-        <h4 class="center">การแสดง</h4>
-        <br/>
-        <div class="row" style="line-height: 32px;">
-            <div class="col s12 m6">
-                <!-- b>ลานอเนกประสงค์ 70 ปีต.อ.</b><br/ -->
-                ชมรมนาฏศิลป์
-                ชมรมดนตรีสากล
-                คณะผู้นำเชียร์
-                ชมรมเชียร์
-                คัลเลอร์การ์ด
-                คทากร
-                ตลาดหลักทรัพย์แห่งประเทศไทย
-                ชมรมนิเทศศิลป์
+    <div class="section center-align fullpage" id="s-show">
+        <div class="container">
+            <h4 class="center theme-color">การแสดง</h4>
+            <div class="row" style="line-height: 32px;">
+                <div class="col s12 m6">
+                    <h5>ลานอเนกประสงค์ 70 ปี ต.อ.</h5>
+                    คณะคทากร
+                    คณะผู้นำเชียร์โรงเรียน
+                    คณะผู้นำเชียร์ตึก
+                    คัลเลอร์การ์ด
+                    ชมรมดนตรีสากล
+                    ชมรมนิเทศศิลป
+                    ชมรมเชียร์
+                    ชมรมนาฏศิลป์
+                    ชมรมสีสรรพ์ภาษาต่างประเทศที่ 2 (ภาษาญี่ปุ่น)
+                    นักเรียนสายการเรียนต่างๆ
+                    แผนการเรียนภาษา-ญี่ปุ่น
+                    กสร.ภาษาต่างประเทศที่ 2
+                    กสร.สุขศึกษาและพลศึกษา
+                </div>
+                <div class="col s12 m6">
+                    <h5>หอประชุมใหญ่</h5>
+                    ชมรมภาพยนตร์สั้น ชมรมนิเทศศิลป ชมรมสันทนากร	<br/>
+                    ชมรมดุริยางค์และวงดนตรีร่วมสมัย	<br/>
+                    ชมรมภาษาอังกฤษ (English Drama) และชมรมขับร้องประสานเสียง	<br/>
+                    ชมรมขับร้องประสานเสียงภาษาฝรั่งเศส ตึกศิลปะ	<br/>
+                </div>
             </div>
-            <div class="col s12 m6">
-                <!--b>หอประชุมใหญ่</--b><br/-->
-                ชมรมสันทนากร
-                ชมรมขับร้องประสานเสียง
-                ชมรมภาษาอังกฤษ (English Drama)
-                ชมรมภาพยนตร์สั้นและสื่อโทรทัศน์
-                ชมรมดุริยางค์
-                กิจกรรมเปิดมุมหนังสือจิตร ภูมิศักดิ์
-                <!-- ชมรมนิเทศศิลป -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 m6">
-                <a href="/timetable-1.png" class="waves-effect waves-light btn fullwidth pink">เวลาการแสดง ลาน 70 ปีต.อ.</a>
-            </div>
-            <div class="col s12 m6">
-                <a href="/timetable-2.png" class="waves-effect waves-light btn fullwidth red">เวลาการแสดง หอประขุมใหญ่</a>
+            <div class="row">
+                <div class="col s12 m6">
+                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn disabled fullwidth pink">ตารางการแสดง ลาน 70 ปี ต.อ.</a>
+                </div>
+                <div class="col s12 m6">
+                    <a href="/timetable_hall.pdf" class="waves-effect waves-light btn fullwidth red">ตารางการแสดง หอประขุมใหญ่</a>
+                </div>
             </div>
         </div>
     </div>
     <div class="divider"></div>
-    --}}
 
-    {{--
     <div class="section" id="s-competition">
-        <h4 class="center">การแข่งขัน</h4>
+        <h4 class="center theme-color">การแข่งขัน</h4>
         <div class="row" style="line-height: 32px;">
             <div class="col s12 l4">
                 <div class="icon-block center-align">
-                    <h5 class="center en">TUMSO</h5>
-                    <p class="light">การแข่งขันคณิตศาสตร์และวิทยาศาสตร์ระหว่างโรงเรียน ครั้งที่ 16<br/><a style="margin-top: 8px;" href="https://tumso.triamudom.cc" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
+                    <h5 class="center">TUMSO 16th</h5>
+                    <p class="light">การแข่งขันคณิตศาสตร์และวิทยาศาสตร์ระหว่างโรงเรียน ครั้งที่ 16<br/>
+                        <a style="margin-top: 8px;" href="https://tumso.triamudom.cc" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
                 </div>
             </div>
             <div class="col s12 l4">
                 <div class="icon-block center-align">
-                    <h5 class="center en">TUGSA</h5>
-                    <p class="light">การแข่งขันตอบปัญหา วิชาสังคมศึกษา <br/><a style="margin-top: 8px;" href="https://www.facebook.com/tugsaoftriamudom/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
+                    <h5 class="center">TUGSA 8th</h5>
+                    <p class="light">การแข่งขันตอบปัญหาสังคมศึกษาระดับชั้นมัธยมศึกษาตอนต้น<br/>
+                        <a style="margin-top: 8px;" href="https://www.facebook.com/tugsaoftriamudom/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
                 </div>
             </div>
             <div class="col s12 l4">
                 <div class="icon-block center-align">
                     <h5 class="center">การแข่งขันกฎหมาย</h5>
-                    <p class="light">การแข่งขันตอบปัญหากฎหมาย ระดับมัธยมศึกษาตอนปลาย ครั้งที่ 14</p>
+                    <p class="light">การแข่งขันตอบปัญหากฎหมาย ระดับมัธยมศึกษาตอนปลาย ครั้งที่ 14<br/>
+                        <a style="margin-top: 8px;" href="https://www.facebook.com/%E0%B8%8A%E0%B8%A1%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%89-%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A1%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-122742547806407/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
                 </div>
             </div>
         </div>
+        <br/><br/>
+        <div class="row" style="line-height: 32px;">
+            <div class="col s12 l4">
+                <div class="icon-block center-align">
+                    <h5 class="center">TUENT Dancing Contest 2018</h5>
+                    <p class="light">การแข่งขันเต้น "Feet On Fire"<br/>
+                        <a style="margin-top: 8px;" href="https://www.facebook.com/EntertainerClub/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="icon-block center-align">
+                    <h5 class="center">Triam Debate</h5>
+                    <p class="light">การแข่งขันโต้วาทีภาษาอังกฤษ 2018 Triam Debate Challenge<br/>
+                        <a style="margin-top: 8px;" href="https://www.facebook.com/triamdebate/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="divider"></div>
-    --}}
 
-    <div class="section center-align" id="s-more">
-        <h4>สถานที่ <i class="material-icons">map</i></h4>
-        <b>โรงเรียนเตรียมอุดมศึกษา</b><br/>
-        227 ถนนพญาไท เขตปทุมวัน กรุงเทพมหานคร 10330<br />
-        (<a class="modal-trigger" href="#modal-direction">การเดินทาง</a> | <a href="/birdmap.jpg">แผนผัง</a>)
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.611217557155!2d100.53043846420802!3d13.741972256501489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed3828ba8e5%3A0xf0db3be87e158217!2zVHJpYW0gVWRvbSBTdWtzYSBTY2hvb2wg4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4LmA4LiV4Lij4Li14Lii4Lih4Lit4Li44LiU4Lih4Lio4Li24LiB4Lip4Liy!5e0!3m2!1sth!2sth!4v1471690441533"
-                frameborder="0" allowfullscreen style="border:0; height:220px; width:100%"></iframe>
+    <div class="section center-align fullpage" id="s-map">
+        <div class="container">
+            <h4>สถานที่ <i class="material-icons">map</i></h4>
+            <b>โรงเรียนเตรียมอุดมศึกษา</b><br/>
+            227 ถนนพญาไท เขตปทุมวัน กรุงเทพมหานคร 10330<br />
+            (<a class="modal-trigger" href="#modal-direction">การเดินทาง</a> | <a href="/birdmap.jpg">แผนผัง</a>)
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.611217557155!2d100.53043846420802!3d13.741972256501489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed3828ba8e5%3A0xf0db3be87e158217!2zVHJpYW0gVWRvbSBTdWtzYSBTY2hvb2wg4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4LmA4LiV4Lij4Li14Lii4Lih4Lit4Li44LiU4Lih4Lio4Li24LiB4Lip4Liy!5e0!3m2!1sth!2sth!4v1471690441533"
+                    frameborder="0" allowfullscreen style="border:0; height:220px; width:100%"></iframe>
+        </div>
     </div>
 
     <div id="modal-direction" class="modal">

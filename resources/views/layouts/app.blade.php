@@ -66,7 +66,7 @@
                 align-items: flex-end;
             }
 
-            .left-item { margin-right: 50px; }
+            .left-item { margin-right: 40px; }
 
             .subtitle { font-size: 2.5em; }
 
@@ -109,6 +109,25 @@
             padding-left: 5%;
             padding-right: 5%;
         }
+
+        #s-exhibition, #s-show, #s-competition, #s-map {
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+
+        #s-exhibition, #s-show, #s-competition, #s-map {
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+
+        #s-show {
+            background-color: #fafdfe;
+        }
+
+        #s-map {
+            background-color: #f7f7f9;
+        }
+
 
         .btn.login, .btn.logout {
             font-family: "Kanit", sans-serif;
