@@ -54,7 +54,7 @@
                                     <option value="mr"{{ old('prefix') === 'mr' ? " selected" : "" }}>นาย</option>
                                     <option value="miss"{{ old('prefix') === 'miss' ? " selected" : "" }}>นางสาว</option>
                                     <option value="mrs"{{ old('prefix') === 'mrs' ? " selected" : "" }}>นาง</option>
-                                    {{-- TODO: Add option for "others", Edit placeholder to "อื่นๆ (โปรดระบุในช่องต่อไป ติดกับชื่อ)" --}}
+                                    <option value="other"{{ old('prefix') === 'other' ? " selected" : "" }}>อื่นๆ (โปรดระบุในช่องต่อไป ติดกับชื่อ)</option>
                                 </select>
 
                                 <label>คำนำหน้าชื่อ</label>
@@ -112,7 +112,8 @@
                                     <option value="" selected disabled>เลือกประเภท</option>
                                     <option value="student"{{ old('accountType') === 'student' ? " selected" : "" }}>นักเรียน</option>
                                     <option value="teacher"{{ old('accountType') === 'teacher' ? " selected" : "" }}>ครู</option>
-                                    {{-- TODO: Add options for 'ผู้ปกครอง', 'นักศึกษา' --}}
+                                    <option value="student-college"{{ old('accountType') === 'student-college' ? " selected" : "" }}>นักศึกษา</option>
+                                    <option value="guardian"{{ old('accountType') === 'guardian' ? " selected" : "" }}>ผู้ปกครอง</option>
                                 </select>
 
                                 <label>ประเภท</label>

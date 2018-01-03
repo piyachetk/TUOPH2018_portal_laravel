@@ -130,7 +130,9 @@ class UserController extends Controller
                     'access_token' => session()->get('access_token'),
                 ]);
                 break;
+            case 'student-college':
             case 'teacher':
+            case 'guardian':
                 $this->validate($request, [
                     'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl',
                     'firstName' => 'required|max:255',
