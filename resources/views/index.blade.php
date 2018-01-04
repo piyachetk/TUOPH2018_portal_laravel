@@ -30,20 +30,20 @@
 @endsection
 
 @section("content")
-    @if(session()->has('error'))
-        <div class="z-depth-1 card-panel red white-text" style="max-width:800px; margin: 3rem auto 3rem;">
-            {{ session()->get('error') }}
-        </div>
-    @endif
-
-    @if(session()->has('status'))
-        <div class="z-depth-1 card-panel green white-text" style="max-width:800px; margin: 3rem auto 3rem;">
-            {{ session()->get('status') }}
-        </div>
-    @endif
-
     <div class="section center-align fullpage" id="s-intro">
         <div class="container">
+            @if(session()->has('error'))
+                <div class="z-depth-1 card-panel red white-text" style="max-width:800px; margin: 3rem auto 3rem;">
+                    {{ session()->get('error') }}
+                </div>
+            @endif
+
+            @if(session()->has('status'))
+                <div class="z-depth-1 card-panel green white-text" style="max-width:800px; margin: 3rem auto 3rem;">
+                    {{ session()->get('status') }}
+                </div>
+            @endif
+
             <img class="responsive-img" src="/OpenHouse_Logo.png" alt="Triam Udom Open House Logo" width="360" />
             <p class="theme-color">งานนิทรรศการที่ยิ่งใหญ่ที่สุดในประวัติศาสตร์โรงเรียน<span class="nobr">เตรียมอุดมศึกษา</span><br />
                 พบกับกิจกรรมที่น่าสนใจต่างๆ อาทิ การแนะนำโรงเรียน การแสดงผลงานนักเรียน นิทรรศการวิชาการ
