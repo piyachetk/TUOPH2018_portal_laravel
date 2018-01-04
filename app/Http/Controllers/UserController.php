@@ -56,7 +56,7 @@ class UserController extends Controller
             return redirect('/register');
         }
         else {
-            $url = $facebookService->getAuthorizationUri(['auth_type' => 'rerequest']);
+            $url = $facebookService->getAuthorizationUri();
             return redirect((string)$url);
         }
     }
