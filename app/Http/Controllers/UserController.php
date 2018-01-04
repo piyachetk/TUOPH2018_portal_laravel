@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
 use \Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -107,81 +108,87 @@ class UserController extends Controller
             return redirect()->back();
         }
 
-        $accountType = $request->get('accountType');
-        switch($accountType){
-            case 'student':
-                $this->validate($request, [
-                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
-                    'firstName' => 'required|max:255',
-                    'lastName' => 'required|max:255',
-                    'email' => 'required|email|max:255',
-                    'studentYear' => 'required|in:p1-3,p4-6,m1,m2,m3,m4,m5,m6',
-                    'schoolName' => 'max:255',
-                ]);
-                $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
-                    'prefix' => $request->get('prefix', 'master-boy'),
-                    'firstName' => $request->get('firstName', ''),
-                    'lastName' => $request->get('lastName', ''),
-                    'email' => $request->get('email', ''),
-                    'accountType' => $request->get('accountType'),
-                    'studentYear' => $request->get('studentYear', 'm3'),
-                    'schoolName' => $request->get('schoolName', ''),
-                    'interests' => [],
-                    'access_token' => session()->get('access_token'),
-                ]);
-                break;
-            case 'teacher':
-                $this->validate($request, [
-                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
-                    'firstName' => 'required|max:255',
-                    'lastName' => 'required|max:255',
-                    'email' => 'required|email|max:255',
-                    'schoolName' => 'max:255',
-                ]);
-                $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
-                    'prefix' => $request->get('prefix', 'master-boy'),
-                    'firstName' => $request->get('firstName', ''),
-                    'lastName' => $request->get('lastName', ''),
-                    'email' => $request->get('email', ''),
-                    'accountType' => $request->get('accountType'),
-                    'schoolName' => $request->get('schoolName', ''),
-                    'interests' => [],
-                    'access_token' => session()->get('access_token'),
-                ]);
-                break;
-                break;
-            case 'student-college':
-            case 'guardian':
-                $this->validate($request, [
-                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
-                    'firstName' => 'required|max:255',
-                    'lastName' => 'required|max:255',
-                    'email' => 'required|email|max:255'
-                ]);
-                $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
-                    'prefix' => $request->get('prefix', 'master-boy'),
-                    'firstName' => $request->get('firstName', ''),
-                    'lastName' => $request->get('lastName', ''),
-                    'email' => $request->get('email', ''),
-                    'accountType' => $request->get('accountType'),
-                    'interests' => [],
-                    'access_token' => session()->get('access_token'),
-                ]);
-                break;
-            default:
-                session()->flash('error', 'ประเภทของบัญชีไม่ถูกรูปแบบ');
+        try {
+
+            $accountType = $request->get('accountType');
+            switch ($accountType) {
+                case 'student':
+                    $this->validate($request, [
+                        'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
+                        'firstName' => 'required|max:255',
+                        'lastName' => 'required|max:255',
+                        'email' => 'required|email|max:255',
+                        'studentYear' => 'required|in:p1-3,p4-6,m1,m2,m3,m4,m5,m6',
+                        'schoolName' => 'required|max:255',
+                    ]);
+                    $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
+                        'prefix' => $request->get('prefix', 'master-boy'),
+                        'firstName' => $request->get('firstName', ''),
+                        'lastName' => $request->get('lastName', ''),
+                        'email' => $request->get('email', ''),
+                        'accountType' => $request->get('accountType'),
+                        'studentYear' => $request->get('studentYear', 'm3'),
+                        'schoolName' => $request->get('schoolName', ''),
+                        'interests' => [],
+                        'access_token' => session()->get('access_token'),
+                    ]);
+                    break;
+                case 'teacher':
+                    $this->validate($request, [
+                        'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
+                        'firstName' => 'required|max:255',
+                        'lastName' => 'required|max:255',
+                        'email' => 'required|email|max:255',
+                        'schoolName' => 'required|max:255',
+                    ]);
+                    $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
+                        'prefix' => $request->get('prefix', 'master-boy'),
+                        'firstName' => $request->get('firstName', ''),
+                        'lastName' => $request->get('lastName', ''),
+                        'email' => $request->get('email', ''),
+                        'accountType' => $request->get('accountType'),
+                        'schoolName' => $request->get('schoolName', ''),
+                        'interests' => [],
+                        'access_token' => session()->get('access_token'),
+                    ]);
+                    break;
+                    break;
+                case 'student-college':
+                case 'guardian':
+                    $this->validate($request, [
+                        'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
+                        'firstName' => 'required|max:255',
+                        'lastName' => 'required|max:255',
+                        'email' => 'required|email|max:255'
+                    ]);
+                    $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
+                        'prefix' => $request->get('prefix', 'master-boy'),
+                        'firstName' => $request->get('firstName', ''),
+                        'lastName' => $request->get('lastName', ''),
+                        'email' => $request->get('email', ''),
+                        'accountType' => $request->get('accountType'),
+                        'interests' => [],
+                        'access_token' => session()->get('access_token'),
+                    ]);
+                    break;
+                default:
+                    session()->flash('error', 'ประเภทของบัญชีไม่ถูกรูปแบบ');
+                    return redirect()->back();
+            }
+
+            $json = json_decode($result, true);
+
+            if (array_key_exists('error', $json)) {
+                session()->flash('error', 'มีข้อผิดพลาดที่ไม่สามารถระบุได้ กรุณาติดต่อผู้ดูแลระบบ');
                 return redirect()->back();
+            } else {
+                session()->flash('status', 'ลงทะเบียนสำเร็จ');
+                return redirect('/');
+            }
         }
-
-        $json = json_decode($result, true);
-
-        if(array_key_exists('error', $json)){
-            session()->flash('error', 'มีข้อผิดพลาดที่ไม่สามารถระบุได้ กรุณาติดต่อผู้ดูแลระบบ');
+        catch(Exception $ex){
+            session()->flash('error', 'ข้อมูลไม่ครบถ้วน');
             return redirect()->back();
-        }
-        else{
-            session()->flash('status', 'ลงทะเบียนสำเร็จ');
-            return redirect('/');
         }
     }
 

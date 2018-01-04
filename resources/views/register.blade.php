@@ -35,7 +35,7 @@
             <div class="panel-body">
 
                 @if(session()->has('error'))
-                    <div class="z-depth-1 card-panel red white-text" style="max-width:1280px; margin: auto auto auto;">
+                    <div class="z-depth-1 card-panel red white-text" style="max-width:1280px; margin: auto auto 1rem;">
                         {{ session()->get('error') }}
                     </div>
                 @endif
@@ -71,7 +71,6 @@
                                     <span class="help-block">
                                         <strong>{{ $errors->first('prefix') }}</strong>
                                         <br/>
-                                        <br/>
                                     </span>
                                 @endif
                             </div>
@@ -83,7 +82,6 @@
                                 @if ($errors->has('firstName'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('firstName') }}</strong>
-                                        <br/>
                                         <br/>
                                     </span>
                                 @endif
@@ -97,7 +95,6 @@
                                     <span class="help-block">
                                         <strong>{{ $errors->first('lastName') }}</strong>
                                         <br/>
-                                        <br/>
                                     </span>
                                 @endif
                             </div>
@@ -109,7 +106,6 @@
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
-                                        <br/>
                                         <br/>
                                     </span>
                                 @endif
@@ -129,7 +125,6 @@
                                 @if ($errors->has('accountType'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('accountType') }}</strong>
-                                        <br/>
                                         <br/>
                                     </span>
                                 @endif
@@ -154,7 +149,6 @@
                                     <span class="help-block">
                                         <strong>{{ $errors->first('studentYear') }}</strong>
                                         <br/>
-                                        <br/>
                                     </span>
                                 @endif
                             </div>
@@ -165,7 +159,6 @@
                                 @if ($errors->has('schoolName'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('schoolName') }}</strong>
-                                        <br/>
                                         <br/>
                                     </span>
                                 @endif
