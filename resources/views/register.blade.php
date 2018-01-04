@@ -15,6 +15,14 @@
                 $("#studentYearDiv").hide();
             }
         }
+        function notschool() {
+            if ($("#accountType").val() === 'student' || $("#accountType").val() === 'teacher') {
+                $("#schoolDiv").show();
+            }
+            else {
+                $("#schoolDiv").hide();
+            }
+        }
     </script>
 
     <div class="container">
@@ -151,7 +159,7 @@
                                 @endif
                             </div>
 
-                            <div class="input-field col s12">
+                            <div id="schoolDiv" class="input-field col s12">
                                 <input name="schoolName" type="text" id="autocomplete-input" class="autocomplete">
                                 <label for="autocomplete-input">โรงเรียน (ไม่ต้องมีคำว่า'โรงเรียน')</label>
                                 @if ($errors->has('schoolName'))
@@ -526,5 +534,9 @@
     student();
     $("#accountType").on('change', function() {
         student();
+    });
+    notschool();
+    $("#accountType").on('change', function() {
+        notschool();
     });
 @endsection
