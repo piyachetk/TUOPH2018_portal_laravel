@@ -112,8 +112,8 @@
                                     <option value="" selected disabled>เลือกประเภท</option>
                                     <option value="student"{{ old('accountType') === 'student' ? " selected" : "" }}>นักเรียน</option>
                                     <option value="teacher"{{ old('accountType') === 'teacher' ? " selected" : "" }}>ครู</option>
-                                    <option value="student-college"{{ old('accountType') === 'student-college' ? " selected" : "" }}>นักศึกษา</option>
                                     <option value="guardian"{{ old('accountType') === 'guardian' ? " selected" : "" }}>ผู้ปกครอง</option>
+                                    <option value="student-college"{{ old('accountType') === 'student-college' ? " selected" : "" }}>นักศึกษา</option>
                                 </select>
 
                                 <label>ประเภท</label>

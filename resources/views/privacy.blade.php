@@ -32,8 +32,7 @@ House 2018</span></b><span style='font-size:18.0pt;font-family:"TH Sarabun New",
                     style='font-size:18.0pt;font-family:"TH Sarabun New",sans-serif'>1.<span
                         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
                     lang=TH style='font-size:18.0pt;font-family:"TH Sarabun New",sans-serif'>เพื่อความสะดวกในการให้บริการแก่ผู้ใช้บริการทุกท่านที่แวะมายังเว็บไซต์
-</span><b><span style='font-size:18.0pt;font-family:"TH Sarabun New",sans-serif'>(<span
-                            lang=TH>ของหน่วยงาน</span>)</span></b><span style='font-size:18.0pt;font-family:
+</span><b><span style='font-size:18.0pt;font-family:"TH Sarabun New",sans-serif'>Triam Udom Open House 2018</span></b><span style='font-size:18.0pt;font-family:
 "TH Sarabun New",sans-serif'> <span lang=TH>ทางเว็บไซต์จึงได้จัดเก็บรวบรวมข้อมูลส่วนบุคคลของท่านไว้
 เช่น อีเมล์แอดเดรส (</span>Email Address) <span lang=TH>ชื่อ (</span>Name) <span
                         lang=TH>เป็นต้น</span></span></p>
@@ -161,8 +160,7 @@ font-family:"TH Sarabun New",sans-serif'><br>
 font-family:"TH Sarabun New",sans-serif'>“<span lang=TH>คุกกี้” คือ ข้อมูลที่<b>
 </b></span><b>Triam Udom Open House 2018 </b><span lang=TH>ส่ง ไปยังโปรแกรมค้นผ่านเว็บไซต์
 (</span>Web browser) <span lang=TH>ของผู้ใช้บริการ และเมื่อมีการติดตั้งข้อมูลดังกล่าวไว้ในระบบของท่านแล้ว
-หากมีการใช้</span> “<span lang=TH>คุกกี้” ก็จะทำให้เว็บไซต์ </span><b>(<span
-                            lang=TH>ของหน่วยงาน</span>)</b> <span lang=TH>สามารถบันทึกหรือจดจำข้อมูลของผู้ใช้บริการไว้
+หากมีการใช้</span> “<span lang=TH>คุกกี้” ก็จะทำให้เว็บไซต์ </span><b>Triam Udom Open House 2018</b> <span lang=TH>สามารถบันทึกหรือจดจำข้อมูลของผู้ใช้บริการไว้
 จนกว่าผู้ใช้บริการจะออกจากโปรแกรมค้นผ่านเว็บไซต์ หรือจนกว่าผู้ใช้บริการจะทำการลบ
 “คุกกี้” นั้นเสีย หรือไม่อนุญาตให้</span> “<span lang=TH>คุกกี้” นั้นทำงานต่อไป</span></span></p>
 
@@ -196,7 +194,7 @@ font-family:"TH Sarabun New",sans-serif'>Triam Udom Open House 2018 </span></b><
 Open House 2018<span lang=TH> </span></span></b><span lang=TH style='font-size:
 18.0pt;font-family:"TH Sarabun New",sans-serif'>จึงขอแนะนำให้ผู้ใช้บริการอ่านนโยบายความเป็นส่วนตัวทุกครั้งที่แวะชม
 หรือเยี่ยมชม หรือมีการใช้บริการจากเว็บไซต์ </span><b><span style='font-size:
-18.0pt;font-family:"TH Sarabun New",sans-serif'>(<span lang=TH>ของหน่วยงาน)</span></span></b><span
+18.0pt;font-family:"TH Sarabun New",sans-serif'>Triam Udom Open House 2018</span></b><span
                     style='font-size:18.0pt;font-family:"TH Sarabun New",sans-serif'><br>
 &nbsp;</span></p>
 

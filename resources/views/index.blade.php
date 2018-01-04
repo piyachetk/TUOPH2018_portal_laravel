@@ -180,10 +180,10 @@
             </div>
             <div class="row">
                 <div class="col s12 m6">
-                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn disabled fullwidth pink">ตารางการแสดง ลาน 70 ปี ต.อ.</a>
+                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth  light-green darken-3">ตารางการแสดง ลาน 70 ปี ต.อ.</a>
                 </div>
                 <div class="col s12 m6">
-                    <a href="/timetable_hall.pdf" class="waves-effect waves-light btn fullwidth red">ตารางการแสดง หอประขุมใหญ่</a>
+                    <a href="/timetable_hall.pdf" class="waves-effect waves-light btn fullwidth deep-purple darken-1">ตารางการแสดง หอประขุมใหญ่</a>
                 </div>
             </div>
         </div>
