@@ -111,7 +111,7 @@ class UserController extends Controller
         switch($accountType){
             case 'student':
                 $this->validate($request, [
-                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl',
+                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
                     'firstName' => 'required|max:255',
                     'lastName' => 'required|max:255',
                     'email' => 'required|email|max:255',
@@ -134,7 +134,7 @@ class UserController extends Controller
             case 'teacher':
             case 'guardian':
                 $this->validate($request, [
-                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl',
+                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
                     'firstName' => 'required|max:255',
                     'lastName' => 'required|max:255',
                     'email' => 'required|email|max:255',
