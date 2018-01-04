@@ -16,6 +16,14 @@ Route::group(['middleware' => ['web']], function () {
         return view('index');
     }]);
 
+    Route::get('/legal/tos', ['as' => 'tos', function () {
+        return view('tos');
+    }]);
+
+    Route::get('/legal/privacy', ['as' => 'privacy', function () {
+        return view('privacy');
+    }]);
+
     Route::get('/redirectApp', function () {
         $agent = new Jenssegers\Agent\Agent();
         if ($agent->isAndroidOS()){
