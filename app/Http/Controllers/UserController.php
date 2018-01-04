@@ -38,7 +38,7 @@ class UserController extends Controller
 
     public function loginFacebook(Request $request){
         $code = $request->get('code');
-        $facebookService = \OAuth::consumer('Facebook');
+        $facebookService = \OAuth::consumer('Facebook', url('/login/facebook'));
 
         if (!is_null($code)) {
             $token = $facebookService->requestAccessToken($code);
@@ -56,7 +56,7 @@ class UserController extends Controller
             return redirect('/register');
         }
         else {
-            $url = $facebookService->getAuthorizationUri();
+            $url = $facebookService->getAuthorizationUri(['auth_type' => 'rerequest']);
             return redirect((string)$url);
         }
     }
@@ -81,7 +81,7 @@ class UserController extends Controller
             return redirect('/register');
         }
         else {
-            $url = $googleService->getAuthorizationUri();
+            $url = $googleService->getAuthorizationUri(['approval_prompt' => 'force']);
             return redirect((string)$url);
         }
     }
@@ -166,5 +166,10 @@ class UserController extends Controller
             session()->flash('status', 'ลงทะเบียนสำเร็จ');
             return redirect('/');
         }
+    }
+
+    public function logout(Request $request){
+        session()->flush();
+        return redirect('/');
     }
 }

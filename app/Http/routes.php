@@ -38,10 +38,7 @@ Route::group(['middleware' => ['web']], function () {
     });
 
     Route::group(['middleware' => ['auth']], function () {
-        Route::get('/logout', function(){
-            session()->flush();
-            return redirect('/');
-        });
+        Route::get('/logout', 'UserController@logout');
         Route::get('/register', function () {
             if(\App\Http\Controllers\UserController::getUserData()['registered']){
                 session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว สามารถแก้ไขข้อมูลได้ผ่านทางแอปพลิเคชั่นเท่านั้น');
