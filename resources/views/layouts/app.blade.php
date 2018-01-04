@@ -12,6 +12,10 @@
     <meta name="keywords" content="Triam Udom Open House TU OpenHouse เตรียมอุดม นิทรรศการ ต.อ. นิทรรศ"/>
     <meta name="description" content="งานนิทรรศการที่ยิ่งใหญ่ที่สุดในประวัติศาสตร์โรงเรียนเตรียมอุดมศึกษา 11-13 มกราคม 2561"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta property="og:image" content="{{ url('/OpenHouse_Logo.png') }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="655">
+    <meta property="og:image:height" content="542">
 
     <title>@yield('title') - ต.อ. นิทรรศ ๘ ทศวรรษเตรียมอุดมศึกษา</title>
 
