@@ -130,9 +130,7 @@ class UserController extends Controller
                     'access_token' => session()->get('access_token'),
                 ]);
                 break;
-            case 'student-college':
             case 'teacher':
-            case 'guardian':
                 $this->validate($request, [
                     'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
                     'firstName' => 'required|max:255',
@@ -147,6 +145,25 @@ class UserController extends Controller
                     'email' => $request->get('email', ''),
                     'accountType' => $request->get('accountType'),
                     'schoolName' => $request->get('schoolName', ''),
+                    'interests' => [],
+                    'access_token' => session()->get('access_token'),
+                ]);
+                break;
+                break;
+            case 'student-college':
+            case 'guardian':
+                $this->validate($request, [
+                    'prefix' => 'required|in:mr,mrs,miss,master-boy,master-girl,other',
+                    'firstName' => 'required|max:255',
+                    'lastName' => 'required|max:255',
+                    'email' => 'required|email|max:255'
+                ]);
+                $result = self::httpPost('https://openhouse.buffalolarity.com/api/register', [
+                    'prefix' => $request->get('prefix', 'master-boy'),
+                    'firstName' => $request->get('firstName', ''),
+                    'lastName' => $request->get('lastName', ''),
+                    'email' => $request->get('email', ''),
+                    'accountType' => $request->get('accountType'),
                     'interests' => [],
                     'access_token' => session()->get('access_token'),
                 ]);
