@@ -294,6 +294,15 @@
 @endsection
 
 @section('script')
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111992660-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111992660-1');
+    </script>
     <script>
         function styleScroll() {
             if ($(document).scrollTop() <= 100) {
