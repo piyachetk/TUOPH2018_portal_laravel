@@ -115,19 +115,19 @@
                     ชมรมวิทยาศาสตร์	<br/>
                     ชมรมสังคมศึกษา	<br/>
                     ชมรมภาษาไทย	<br/>
-                    ชมรมห้องสมุด	<br/>
+                    <a href="https://www.facebook.com/ชมรมห้องสมุด-โรงเรียนเตรียมอุดมศึกษา-237566130068812/">ชมรมห้องสมุด</a>	<br/>
                     ชมรมศาสนาและวัฒนธรรมไทย	<br/>
-                    ชมรมวาทศิลป์	<br/>
+                    <a href="https://www.facebook.com/WatasilpTU/">ชมรมวาทศิลป์</a>	<br/>
                     ชมรมวรรณศิลป์ ต.อ.	<br/>
-                    ชมรมศิลปศึกษา	<br/>
+                    <a href="https://www.facebook.com/TuArtClub/">ชมรมศิลปศึกษา</a>	<br/>
                 </div>
                 <div class="col s12 m4">
                     ชมรมผู้บำเพ็ญประโยชน์	<br/>
-                    ชมรมผู้นำเยาวชน	<br/>
+                    <a href="https://www.facebook.com/tumedical/">ชมรมผู้นำเยาวชนฯ</a>	<br/>
                     ชมรมอนุรักษ์ธรรมชาติ	<br/>
                     ชมรมเพาะพันธุ์ไม้	<br/>
-                    ชมรมครอสเวิร์ด	<br/>
-                    <a href=" https://www.facebook.com/PhotoTriam/">ชมรมถ่ายภาพ</a>	<br/>
+                    <a href="https://www.facebook.com/TUCROSSWORD/">ชมรมครอสเวิร์ด</a>	<br/>
+                    <a href="https://www.facebook.com/PhotoTriam/">ชมรมถ่ายภาพ</a>	<br/>
                     <a href="https://www.facebook.com/IndyTriamudom/">ชมรมสิ่งละพันอันละน้อย</a>	<br/>
                     ชมรมค้นพบตนเอง	<br/>
                 </div>
@@ -135,11 +135,11 @@
                     ชมรมสร้างสรรค์หนังสือ	<br/>
                     <a href="https://www.facebook.com/tu.comicclub/">ชมรมการ์ตูน</a>	<br/>
                     ชมรมนิเทศศิลป	<br/>
-                    <a href="https://www.facebook.com/ชมรมของเล่นเพื่อการเรียนรู้-โรงเรียนเตรียมอุดมศึกษา-533936039981954/">ชมรมของเล่นเพื่อการเรียนรู้</a><br/>
+                    <a href="https://www.facebook.com/RobotTU/">ชมรมของเล่นเพื่อการเรียนรู้</a>	<br/>
                     ชมรมเศรษฐศาสตร์	<br/>
                     <a href="https://www.facebook.com/TUGLOBE/">ชมรมโลกทั้งระบบ</a>	<br/>
                     ชมรมโลกศาสตร์	<br/>
-                    ชมรมสีสรรพ์ภาษาต่างประเทศที่ 2	<br/>
+                    <a href="https://www.facebook.com/TU.SFLC/">ชมรมสีสรรพ์ภาษาต่างประเทศที่ ๒</a>	<br/>
                 </div>
             </div>
         </div>
@@ -202,7 +202,7 @@
                     <h5>หอประชุมใหญ่</h5>
                     ชมรมภาพยนตร์สั้นและสื่อโทรทัศน์<br/>
                     ชมรมนิเทศศิลป<br/>
-                    ชมรมสันทนากร	<br/>
+                    <a href="https://www.facebook.com/EntertainerClub/">ชมรมสันทนากร</a>	<br/>
                     ชมรมดุริยางค์ร่วมกับวงดนตรีร่วมสมัย	<br/>
                     ชมรมภาษาอังกฤษ (Drama) ร่วมกับชมรมขับร้องประสานเสียง	<br/>
                     ชมรมสีสรรพ์ต่างประเทศที่ ๒ (French Chorus)<br/>

@@ -176,6 +176,10 @@
             margin-bottom: 0.3rem
         }
 
+        .MsoNormal {
+            font-family: "TH Sarabun New", sans-serif;
+        }
+
         @yield('style')
     </style>
 </head>
