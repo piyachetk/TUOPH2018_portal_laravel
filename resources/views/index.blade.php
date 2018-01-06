@@ -79,32 +79,30 @@
         <br/>
 
         <h5 class="center theme-color light-text">แผนการเรียน</h5>
-        <div class="container">
-            <div class="row" style="line-height: 32px;">
-                <div class="col s12 m5">
-                    แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์	<br/>
-                    แผนการเรียนวิทย์คณิต-ฝรั่งเศส	<br/>
-                    แผนการเรียนวิทย์คณิต-เยอรมัน	<br/>
-                    แผนการเรียนวิทย์คณิต-สเปน	<br/>
-                    แผนการเรียนวิทย์คณิต-ญี่ปุ่น	<br/>
-                    แผนการเรียนวิทย์คณิต-จีน	<br/>
-                    แผนการเรียนวิทย์คณิต-เกาหลี	<br/>
-                    ห้องเรียนพิเศษคณิตศาสตร์	<br/>
-                    ห้องเรียนพิเศษวิทยาศาสตร์	<br/>
-                    <br/>
-                </div>
-                <div class="col s12 m2 hide-on-small-only">&nbsp;</div>
-                <div class="col s12 m5">
-                    แผนการเรียนภาษา-คณิตศาสตร์	<br/>
-                    แผนการเรียนภาษา-ฝรั่งเศส	<br/>
-                    แผนการเรียนภาษา-เยอรมัน	<br/>
-                    แผนการเรียนภาษา-สเปน	<br/>
-                    แผนการเรียนภาษา-ญี่ปุ่น	<br/>
-                    แผนการเรียนภาษา-จีน	<br/>
-                    แผนการเรียนภาษา-เกาหลี	<br/>
-                    โครงการความสามารถพิเศษภาษาไทย	<br/>
-                    โครงการความสามารถพิเศษภาษาอังกฤษ	<br/>
-                </div>
+        <div class="row" style="line-height: 32px;">
+            <div class="col s12 m5">
+                แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์	<br/>
+                แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ ภาษาฝรั่งเศส	<br/>
+                แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ ภาษาเยอรมัน	<br/>
+                แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ ภาษาสเปน	<br/>
+                แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ ภาษาญี่ปุ่น	<br/>
+                แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ ภาษาจีน	<br/>
+                แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ ภาษาเกาหลี	<br/>
+                ห้องเรียนพิเศษคณิตศาสตร์	<br/>
+                ห้องเรียนพิเศษวิทยาศาสตร์	<br/>
+                <br/>
+            </div>
+            <div class="col s12 m2 hide-on-small-only">&nbsp;</div>
+            <div class="col s12 m5">
+                แผนการเรียนภาษา-คณิตศาสตร์	<br/>
+                แผนการเรียนภาษา-ฝรั่งเศส	<br/>
+                แผนการเรียนภาษา-เยอรมัน	<br/>
+                แผนการเรียนภาษา-สเปน	<br/>
+                แผนการเรียนภาษา-ญี่ปุ่น	<br/>
+                แผนการเรียนภาษา-จีน	<br/>
+                แผนการเรียนภาษา-เกาหลี	<br/>
+                โครงการความสามารถพิเศษภาษาไทย	<br/>
+                โครงการความสามารถพิเศษภาษาอังกฤษ	<br/>
             </div>
         </div>
 
@@ -153,7 +151,7 @@
                     <a href="https://www.facebook.com/triamtalk">TriamTalk</a>	<br/>
                 </div>
                 <div class="col s12 m4">
-                    <a href="https://www.facebook.com/AICTriamUdom/">นักเรียนกลุ่มเอไอซี</a>	<br/>
+                    <a href="https://www.facebook.com/AICTriamUdom/">กลุ่มนักเรียนเอไอซี</a>	<br/>
                     งานแนะแนว	<br/>
                 </div>
                 <div class="col s12 m4">
@@ -186,20 +184,20 @@
             <div class="row" style="line-height: 32px;">
                 <div class="col s12 m6">
                     <h5>ลานอเนกประสงค์ 70 ปี ต.อ.</h5>
-                    คณะคทากร คัลเลอร์การ์ด<br/>
+                    คณะคทากรโรงเรียน คัลเลอร์การ์ด<br/>
                     คณะผู้นำเชียร์โรงเรียน
-                    คณะผู้นำเชียร์ตึก<br/>
+                    คณะผู้นำเชียร์ประจำคณะสี<br/>
                     ชมรมดนตรีสากล ชมรมนิเทศศิลป<br/>
                     ชมรมเชียร์ ชมรมนาฏศิลป์<br/>
                     ชมรมสีสรรพ์ภาษาต่างประเทศที่ ๒ (ภาษาญี่ปุ่น)<br/>
                     นักเรียนสายการเรียนต่างๆ<br/>
                     แผนการเรียนภาษา-ญี่ปุ่น<br/>
-                    กสร.ภาษาต่างประเทศที่ ๒<br/>
-                    กสร.สุขศึกษาและพลศึกษา<br/>
+                    กลุ่มสาระการเรียนรู้ภาษาต่างประเทศที่ ๒<br/>
+                    กลุ่มสาระการเรียนรู้สุขศึกษาและพลศึกษา<br/>
                     <br/>
                 </div>
                 <div class="col s12 m6">
-                    <h5>หอประชุมใหญ่</h5>
+                    <h5>หอประชุมโรงเรียนเตรียมอุดมศึกษา</h5>
                     ชมรมภาพยนตร์สั้นและสื่อโทรทัศน์<br/>
                     ชมรมนิเทศศิลป<br/>
                     <a href="https://www.facebook.com/EntertainerClub/">ชมรมสันทนากร</a>	<br/>
@@ -211,10 +209,12 @@
             </div>
             <div class="row">
                 <div class="col s12 m6">
-                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth disabled light-green darken-3">ตารางการแสดง ลาน 70 ปี ต.อ.</a>
+                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth disabled light-green darken-3 hide-on-small-only">ตารางการแสดง ลานอเนกประสงค์ 70 ปี ต.อ.</a>
+                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth disabled light-green darken-3 hide-on-med-and-up">ตารางการแสดง ลานอเนกประสงค์ฯ</a>
                 </div>
                 <div class="col s12 m6">
-                    <a href="/timetable_hall.pdf" class="waves-effect waves-light btn fullwidth deep-purple darken-1">ตารางการแสดง หอประชุมใหญ่</a>
+                    <a href="/timetable_hall.pdf" class="waves-effect waves-light btn fullwidth deep-purple darken-1 hide-on-small-only">ตารางการแสดง หอประชุมโรงเรียนเตรียมอุดมศึกษา</a>
+                    <a href="/timetable_hall.pdf" class="waves-effect waves-light btn fullwidth deep-purple darken-1 hide-on-med-and-up">ตารางการแสดง หอประชุมโรงเรียนฯ</a>
                 </div>
             </div>
         </div>
@@ -273,7 +273,7 @@
         <div class="container">
             <h4>สถานที่ <i class="material-icons">map</i></h4>
             <b>โรงเรียนเตรียมอุดมศึกษา</b><br/>
-            227 ถนนพญาไท เขตปทุมวัน กรุงเทพมหานคร 10330<br />
+            227 ถนนพญาไท แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330<br />
             (<a class="modal-trigger" href="#modal-direction">การเดินทาง</a>{{-- | <a href="/birdmap.jpg">แผนผัง</a>--}})
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.611217557155!2d100.53043846420802!3d13.741972256501489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed3828ba8e5%3A0xf0db3be87e158217!2zVHJpYW0gVWRvbSBTdWtzYSBTY2hvb2wg4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4LmA4LiV4Lij4Li14Lii4Lih4Lit4Li44LiU4Lih4Lio4Li24LiB4Lip4Liy!5e0!3m2!1sth!2sth!4v1471690441533"
                     frameborder="0" allowfullscreen style="border:0; height:220px; width:100%"></iframe>
