@@ -133,7 +133,6 @@
             background-color: #f7f7f9;
         }
 
-
         .btn.login, .btn.logout {
             font-family: "Kanit", sans-serif;
             font-size: 1em;

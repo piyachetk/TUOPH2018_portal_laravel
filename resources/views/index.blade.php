@@ -78,57 +78,87 @@
         <h4 class="center theme-color">นิทรรศการ</h4>
         <br/>
 
+        <h5 class="center theme-color light-text">แผนการเรียน</h5>
+        <div class="container">
+            <div class="row" style="line-height: 32px;">
+                <div class="col s12 m5">
+                    แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์	<br/>
+                    แผนการเรียนวิทย์คณิต-ฝรั่งเศส	<br/>
+                    แผนการเรียนวิทย์คณิต-เยอรมัน	<br/>
+                    แผนการเรียนวิทย์คณิต-สเปน	<br/>
+                    แผนการเรียนวิทย์คณิต-ญี่ปุ่น	<br/>
+                    แผนการเรียนวิทย์คณิต-จีน	<br/>
+                    แผนการเรียนวิทย์คณิต-เกาหลี	<br/>
+                    ห้องเรียนพิเศษคณิตศาสตร์	<br/>
+                    ห้องเรียนพิเศษวิทยาศาสตร์	<br/>
+                    <br/>
+                </div>
+                <div class="col s12 m2 hide-on-small-only">&nbsp;</div>
+                <div class="col s12 m5">
+                    แผนการเรียนภาษา-คณิตศาสตร์	<br/>
+                    แผนการเรียนภาษา-ฝรั่งเศส	<br/>
+                    แผนการเรียนภาษา-เยอรมัน	<br/>
+                    แผนการเรียนภาษา-สเปน	<br/>
+                    แผนการเรียนภาษา-ญี่ปุ่น	<br/>
+                    แผนการเรียนภาษา-จีน	<br/>
+                    แผนการเรียนภาษา-เกาหลี	<br/>
+                    โครงการความสามารถพิเศษภาษาไทย	<br/>
+                    โครงการความสามารถพิเศษภาษาอังกฤษ	<br/>
+                </div>
+            </div>
+        </div>
+
+        <h5 class="center theme-color light-text">ชมรม</h5>
         <div class="row" style="line-height: 32px;">
-            <div class="col s12 m4">
-                แผนการเรียนวิทย์คณิต	<br/>
-                แผนการเรียนวิทย์คณิต-ฝรั่งเศส	<br/>
-                แผนการเรียนวิทย์คณิต-เยอรมัน	<br/>
-                แผนการเรียนวิทย์คณิต-สเปน	<br/>
-                แผนการเรียนวิทย์คณิต-ญี่ปุ่น	<br/>
-                แผนการเรียนวิทย์คณิต-จีน	<br/>
-                แผนการเรียนวิทย์คณิต-เกาหลี	<br/>
-                ห้องเรียนพิเศษคณิตศาสตร์	<br/>
-                ห้องเรียนพิเศษวิทยาศาสตร์	<br/>
-                ชมรมวิทยาศาสตร์	<br/>
-                ชมรมสังคมศึกษา	<br/>
-                ชมรมภาษาไทย	<br/>
-                ชมรมห้องสมุด	<br/>
-                ชมรมศาสนาและวัฒนธรรมไทย	<br/>
-                ชมรมวาทศิลป์	<br/>
+            <div class="container-fluid">
+                <div class="col s12 m4">
+                    ชมรมวิทยาศาสตร์	<br/>
+                    ชมรมสังคมศึกษา	<br/>
+                    ชมรมภาษาไทย	<br/>
+                    ชมรมห้องสมุด	<br/>
+                    ชมรมศาสนาและวัฒนธรรมไทย	<br/>
+                    ชมรมวาทศิลป์	<br/>
+                    ชมรมวรรณศิลป์ ต.อ.	<br/>
+                    ชมรมศิลปศึกษา	<br/>
+                </div>
+                <div class="col s12 m4">
+                    ชมรมผู้บำเพ็ญประโยชน์	<br/>
+                    ชมรมผู้นำเยาวชน	<br/>
+                    ชมรมอนุรักษ์ธรรมชาติ	<br/>
+                    ชมรมเพาะพันธุ์ไม้	<br/>
+                    ชมรมครอสเวิร์ด	<br/>
+                    ชมรมถ่ายภาพ	<br/>
+                    ชมรมสิ่งละพันอันละน้อย	<br/>
+                    ชมรมค้นพบตนเอง	<br/>
+                </div>
+                <div class="col s12 m4">
+                    ชมรมสร้างสรรค์หนังสือ	<br/>
+                    ชมรมการ์ตูน	<br/>
+                    ชมรมนิเทศศิลป	<br/>
+                    ชมรมของเล่นเพื่อการเรียนรู้	<br/>
+                    ชมรมเศรษฐศาสตร์	<br/>
+                    ชมรมโลกทั้งระบบ	<br/>
+                    ชมรมโลกศาสตร์	<br/>
+                    ชมรมสีสรรพ์ภาษาต่างประเทศที่ 2	<br/>
+                </div>
             </div>
-            <div class="col s12 m4">
-                แผนการเรียนภาษา-คณิต	<br/>
-                แผนการเรียนภาษา-ฝรั่งเศส	<br/>
-                แผนการเรียนภาษา-เยอรมัน	<br/>
-                แผนการเรียนภาษา-สเปน	<br/>
-                แผนการเรียนภาษา-ญี่ปุ่น	<br/>
-                แผนการเรียนภาษา-จีน	<br/>
-                แผนการเรียนภาษา-เกาหลี	<br/>
-                โครงการความสามารถพิเศษภาษาไทย	<br/>
-                โครงการความสามารถพิเศษภาษาอังกฤษ	<br/>
-                ชมรมวรรณศิลป์ ต.อ.	<br/>
-                ชมรมศิลปะ	<br/>
-                ชมรมผู้บำเพ็ญประโยชน์	<br/>
-                ชมรมผู้นำเยาวชน	<br/>
-                ชมรมอนุรักษ์ธรรมชาติ	<br/>
-                ชมรมเพาะพันธุ์ไม้	<br/>
-            </div>
-            <div class="col s12 m4">
-                ชมรมครอสเวิร์ด	<br/>
-                ชมรมถ่ายภาพ	<br/>
-                ชมรมสิ่งละพันอันละน้อย	<br/>
-                ชมรมค้นพบตนเอง	<br/>
-                ชมรมสร้างสรรค์หนังสือ	<br/>
-                ชมรมการ์ตูน	<br/>
-                ชมรมนิเทศศิลป	<br/>
-                ชมรมของเล่นเพื่อการเรียนรู้	<br/>
-                ชมรมเศรษฐศาสตร์	<br/>
-                ชมรมโลกทั้งระบบ	<br/>
-                ชมรมโลกศาสตร์	<br/>
-                ชมรมสีสรรพ์ภาษาต่างประเทศที่ 2	<br/>
-                คณะกรรมการนักเรียน	<br/>
-                กลุ่มนักเรียนเอไอซี	<br/>
-                งานแนะแนว	<br/>
+        </div>
+        <br/>
+
+        <h5 class="center theme-color light-text">หน่วยงาน</h5>
+        <div class="row" style="line-height: 32px;">
+            <div class="container-fluid">
+                <div class="col s12 m4">
+                    <a href="https://www.facebook.com/TUSCofficial/">คณะกรรมการนักเรียน</a>	<br/>
+                    <a href="https://www.facebook.com/triamtalk">TriamTalk</a>	<br/>
+                </div>
+                <div class="col s12 m4">
+                    <a href="https://www.facebook.com/AICTriamUdom/">นักเรียนกลุ่มเอไอซี</a>	<br/>
+                    งานแนะแนว	<br/>
+                </div>
+                <div class="col s12 m4">
+                    <a href="https://www.facebook.com/TUBCofficial/">งานสวนพฤกษศาสตร์โรงเรียน</a>	<br/>
+                </div>
             </div>
         </div>
         {{--
@@ -156,31 +186,32 @@
             <div class="row" style="line-height: 32px;">
                 <div class="col s12 m6">
                     <h5>ลานอเนกประสงค์ 70 ปี ต.อ.</h5>
-                    คณะคทากร
+                    คณะคทากร คัลเลอร์การ์ด<br/>
                     คณะผู้นำเชียร์โรงเรียน
-                    คณะผู้นำเชียร์ตึก
-                    คัลเลอร์การ์ด
-                    ชมรมดนตรีสากล
-                    ชมรมนิเทศศิลป
-                    ชมรมเชียร์
-                    ชมรมนาฏศิลป์
-                    ชมรมสีสรรพ์ภาษาต่างประเทศที่ 2 (ภาษาญี่ปุ่น)
-                    นักเรียนสายการเรียนต่างๆ
-                    แผนการเรียนภาษา-ญี่ปุ่น
-                    กสร.ภาษาต่างประเทศที่ 2
-                    กสร.สุขศึกษาและพลศึกษา
+                    คณะผู้นำเชียร์ตึก<br/>
+                    ชมรมดนตรีสากล ชมรมนิเทศศิลป<br/>
+                    ชมรมเชียร์ ชมรมนาฏศิลป์<br/>
+                    ชมรมสีสรรพ์ภาษาต่างประเทศที่ ๒ (ภาษาญี่ปุ่น)<br/>
+                    นักเรียนสายการเรียนต่างๆ<br/>
+                    แผนการเรียนภาษา-ญี่ปุ่น<br/>
+                    กสร.ภาษาต่างประเทศที่ ๒<br/>
+                    กสร.สุขศึกษาและพลศึกษา<br/>
+                    <br/>
                 </div>
                 <div class="col s12 m6">
                     <h5>หอประชุมใหญ่</h5>
-                    ชมรมภาพยนตร์สั้น ชมรมนิเทศศิลป ชมรมสันทนากร	<br/>
-                    ชมรมดุริยางค์และวงดนตรีร่วมสมัย	<br/>
-                    ชมรมภาษาอังกฤษ (English Drama) และชมรมขับร้องประสานเสียง	<br/>
-                    ชมรมขับร้องประสานเสียงภาษาฝรั่งเศส ตึกศิลปะ	<br/>
+                    ชมรมภาพยนตร์สั้นและสื่อโทรทัศน์<br/>
+                    ชมรมนิเทศศิลป<br/>
+                    ชมรมสันทนากร	<br/>
+                    ชมรมดุริยางค์ร่วมกับวงดนตรีร่วมสมัย	<br/>
+                    ชมรมภาษาอังกฤษ (Drama) ร่วมกับชมรมขับร้องประสานเสียง	<br/>
+                    ชมรมสีสรรพ์ต่างประเทศที่ ๒ (French Chorus)<br/>
+                    กลุ่มนักเรียนตึกศิลปะ	<br/>
                 </div>
             </div>
             <div class="row">
                 <div class="col s12 m6">
-                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth  light-green darken-3">ตารางการแสดง ลาน 70 ปี ต.อ.</a>
+                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth disabled light-green darken-3">ตารางการแสดง ลาน 70 ปี ต.อ.</a>
                 </div>
                 <div class="col s12 m6">
                     <a href="/timetable_hall.pdf" class="waves-effect waves-light btn fullwidth deep-purple darken-1">ตารางการแสดง หอประชุมใหญ่</a>
@@ -199,39 +230,41 @@
                     <p class="light">การแข่งขันคณิตศาสตร์และวิทยาศาสตร์ระหว่างโรงเรียน ครั้งที่ 16<br/>
                         <a style="margin-top: 8px;" href="https://tumso.triamudom.cc" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
                 </div>
-            </div>
-            <div class="col s12 l4">
+                <br/>
                 <div class="icon-block center-align">
                     <h5 class="center">TUGSA 8th</h5>
                     <p class="light">การแข่งขันตอบปัญหาสังคมศึกษาระดับชั้นมัธยมศึกษาตอนต้น<br/>
                         <a style="margin-top: 8px;" href="https://www.facebook.com/tugsaoftriamudom/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
                 </div>
-            </div>
+             </div>
             <div class="col s12 l4">
                 <div class="icon-block center-align">
                     <h5 class="center">การแข่งขันกฎหมาย</h5>
                     <p class="light">การแข่งขันตอบปัญหากฎหมาย ระดับมัธยมศึกษาตอนปลาย ครั้งที่ 14<br/>
                         <a style="margin-top: 8px;" href="https://www.facebook.com/%E0%B8%8A%E0%B8%A1%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%89-%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A1%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-122742547806407/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
                 </div>
-            </div>
-        </div>
-        <br/><br/>
-        <div class="row" style="line-height: 32px;">
-            <div class="col s12 l4">
-                <div class="icon-block center-align">
-                    <h5 class="center">TUENT Dancing Contest 2018</h5>
-                    <p class="light">การแข่งขันเต้น "Feet On Fire"<br/>
-                        <a style="margin-top: 8px;" href="https://www.facebook.com/EntertainerClub/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
-                </div>
-            </div>
-            <div class="col s12 l4">
+                <br/>
                 <div class="icon-block center-align">
                     <h5 class="center">Triam Debate</h5>
                     <p class="light">การแข่งขันโต้วาทีภาษาอังกฤษ 2018 Triam Debate Challenge<br/>
                         <a style="margin-top: 8px;" href="https://www.facebook.com/triamdebate/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
                 </div>
             </div>
+            <div class="col s12 l4">
+                <div class="icon-block center-align">
+                    <h5 class="center">TUENT Dancing Contest 2018</h5>
+                    <p class="light">การแข่งขันเต้น "Feet On Fire"<br/>
+                        <a style="margin-top: 8px;" href="https://www.facebook.com/EntertainerClub/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
+                </div>
+                <br/>
+                <div class="icon-block center-align">
+                    <h5 class="center">TU Iron Chef</h5>
+                    <p class="light">การแข่งขันทำอาหาร เชฟกระทะเหล็ก<br/>
+                        <a style="margin-top: 8px;" href="https://www.facebook.com/IndyTriamudom/" class="waves-effect waves-light btn">ดูรายละเอียด</a></p>
+                </div>
+            </div>
         </div>
+        <br/><br/>
 
     </div>
     <div class="divider"></div>
