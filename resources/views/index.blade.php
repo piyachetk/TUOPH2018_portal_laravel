@@ -322,8 +322,11 @@
     $('.modal').modal();
     styleScroll();
     $(document).scroll(function () {
-    styleScroll();
+        styleScroll();
     });
+    if (window.location.href.indexOf('#direction') != -1) {
+        $('#modal-direction').modal('open');
+    }
 @endsection
 
 @section('script')
