@@ -104,7 +104,7 @@ class UserController extends Controller
 
     public function register(Request $request){
         if(self::isLoggedIn() && self::getUserData()['registered']){
-            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว สามารถแก้ไข้อมูลได้ผ่านทางแอปพลิเคชั่นเท่านั้น');
+            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว ไม่แก้ไข้อมูลได้ หากมีปัญหาใดๆ โปรดติดต่อที่เฟสบุ๊กเพจ Triam Udom Open House');
             return redirect()->back();
         }
 

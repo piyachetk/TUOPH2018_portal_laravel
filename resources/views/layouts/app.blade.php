@@ -133,7 +133,6 @@
             background-color: #f7f7f9;
         }
 
-
         .btn.login, .btn.logout {
             font-family: "Kanit", sans-serif;
             font-size: 1em;
@@ -175,6 +174,10 @@
 
         .btn.fullwidth {
             margin-bottom: 0.3rem
+        }
+
+        .MsoNormal {
+            font-family: "TH Sarabun New", sans-serif;
         }
 
         @yield('style')
