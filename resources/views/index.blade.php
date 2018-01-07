@@ -88,8 +88,8 @@
                 แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ ภาษาญี่ปุ่น	<br/>
                 แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ ภาษาจีน	<br/>
                 แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ ภาษาเกาหลี	<br/>
-                ห้องเรียนพิเศษคณิตศาสตร์	<br/>
-                ห้องเรียนพิเศษวิทยาศาสตร์	<br/>
+                โครงการความสามารถพิเศษคณิตศาสตร์	<br/>
+                โครงการความสามารถพิเศษวิทยาศาสตร์	<br/>
                 <br/>
             </div>
             <div class="col s12 m2 hide-on-small-only">&nbsp;</div>
@@ -116,7 +116,7 @@
                     <a href="https://www.facebook.com/ชมรมห้องสมุด-โรงเรียนเตรียมอุดมศึกษา-237566130068812/">ชมรมห้องสมุด</a>	<br/>
                     ชมรมศาสนาและวัฒนธรรมไทย	<br/>
                     <a href="https://www.facebook.com/WatasilpTU/">ชมรมวาทศิลป์</a>	<br/>
-                    ชมรมวรรณศิลป์ ต.อ.	<br/>
+                    <a href="https://www.facebook.com/tu.literatureartclub/">ชมรมวรรณศิลป์ ต.อ.</a>	<br/>
                     <a href="https://www.facebook.com/TuArtClub/">ชมรมศิลปศึกษา</a>	<br/>
                 </div>
                 <div class="col s12 m4">
@@ -130,7 +130,7 @@
                     ชมรมค้นพบตนเอง	<br/>
                 </div>
                 <div class="col s12 m4">
-                    ชมรมสร้างสรรค์หนังสือ	<br/>
+                    <a href="https://www.facebook.com/tuyearbookclub/">ชมรมสร้างสรรค์หนังสือ</a>	<br/>
                     <a href="https://www.facebook.com/tu.comicclub/">ชมรมการ์ตูน</a>	<br/>
                     ชมรมนิเทศศิลป	<br/>
                     <a href="https://www.facebook.com/RobotTU/">ชมรมของเล่นเพื่อการเรียนรู้</a>	<br/>
@@ -202,7 +202,7 @@
                     ชมรมนิเทศศิลป<br/>
                     <a href="https://www.facebook.com/EntertainerClub/">ชมรมสันทนากร</a>	<br/>
                     ชมรมดุริยางค์ร่วมกับวงดนตรีร่วมสมัย	<br/>
-                    ชมรมภาษาอังกฤษ (Drama) ร่วมกับชมรมขับร้องประสานเสียง	<br/>
+                    <a href="https://www.facebook.com/tuengdrama/">ชมรมภาษาอังกฤษ (English Drama)</a> ร่วมกับชมรมขับร้องประสานเสียง	<br/>
                     ชมรมสีสรรพ์ต่างประเทศที่ ๒ (French Chorus)<br/>
                     กลุ่มนักเรียนตึกศิลปะ	<br/>
                 </div>
