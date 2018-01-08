@@ -22,6 +22,10 @@ class Account extends Model
         'interests' => 'array'
     ];
 
+    public function getId():string {
+        return $this->id;
+    }
+
     public $incrementing = false;
     public $timestamps = true;
 }

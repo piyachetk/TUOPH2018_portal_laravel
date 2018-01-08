@@ -44,6 +44,11 @@
                 </div>
             @endif
 
+            {{--@if(\App\Http\Controllers\UserController::isLoggedIn() && \App\Http\Controllers\UserController::getUserData()['registered'])--}}
+                {{-- TODO: Get user id here }}
+                {{--<p>รหัสของคุณคือ {{ $id }}Logged in!</p>--}}
+            {{--@endif--}}
+
             <img class="responsive-img" src="/OpenHouse_Logo.png" alt="Triam Udom Open House Logo" width="360" />
             <p class="theme-color">งานนิทรรศการที่ยิ่งใหญ่ที่สุดในประวัติศาสตร์โรงเรียน<span class="nobr">เตรียมอุดมศึกษา</span><br />
                 พบกับกิจกรรมที่น่าสนใจต่างๆ อาทิ การแนะนำโรงเรียน การแสดงผลงานนักเรียน
@@ -61,12 +66,10 @@
                 @if(!\App\Http\Controllers\UserController::getUserData()['registered'])
                     <a href="/register" class="waves-effect waves-light btn login">ลงทะเบียนเข้าร่วมงาน</a>
                 @else
-                    {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณได้ลงทะเบียนแล้ว</a> --}}
                     <a href="/logout" class="waves-effect waves-light btn indigo darken-3 logout hide-on-small-only">ลงทะเบียนเรียบร้อยแล้ว ออกจากระบบ</a>
                     <a href="/logout" class="waves-effect waves-light btn indigo darken-3 logout hide-on-med-and-up">ออกจากระบบ</a>
                 @endif
             @else
-                {{-- <a href="/register" class="waves-effect waves-light btn blue disabled fullwidth">คุณสามารถลงทะเบียนเมื่อเข้าสู่ระบบแล้วเท่านั้น</a> --}}
                 <a href="/login" class="waves-effect waves-light btn login">ลงทะเบียนเข้าร่วมงาน</a>
             @endif
         </div>
@@ -121,7 +124,7 @@
                     <a href="https://www.facebook.com/%E0%B8%8A%E0%B8%A1%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%89-%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A1%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-122742547806407/?ref=bookmarks">ชมรมกฎหมายน่ารู้</a>	<br/>
                 </div>
                 <div class="col s12 m4">
-                    ชมรมผู้บำเพ็ญประโยชน์	<br/>
+                    <a href="https://www.facebook.com/VolunteerclubTU/">ชมรมผู้บำเพ็ญประโยชน์</a>	<br/>
                     <a href="https://www.facebook.com/tumedical/">ชมรมผู้นำเยาวชนฯ</a>	<br/>
                     ชมรมอนุรักษ์ธรรมชาติ	<br/>
                     ชมรมเพาะพันธุ์ไม้	<br/>
@@ -203,7 +206,7 @@
                     ชมรมภาพยนตร์สั้นและสื่อโทรทัศน์<br/>
                     ชมรมนิเทศศิลป<br/>
                     <a href="https://www.facebook.com/EntertainerClub/">ชมรมสันทนากร</a>	<br/>
-                    ชมรมดุริยางค์ร่วมกับวงดนตรีร่วมสมัย	<br/>
+                    <a href=" https://m.facebook.com/Triamudom-Suksa-Wing-Symphony-Orchestra-338542792849087/">ชมรมดุริยางค์</a>และวงดนตรีร่วมสมัย	<br/>
                     <a href="https://www.facebook.com/tuengdrama/">ชมรมภาษาอังกฤษ (English Drama)</a> ร่วมกับชมรมขับร้องประสานเสียง	<br/>
                     ชมรมสีสรรพ์ต่างประเทศที่ ๒ (French Chorus)<br/>
                     กลุ่มนักเรียนตึกศิลปะ	<br/>
@@ -211,8 +214,8 @@
             </div>
             <div class="row">
                 <div class="col s12 m6">
-                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth disabled light-green darken-3 hide-on-small-only">ตารางการแสดง ลานอเนกประสงค์ 70 ปี ต.อ.</a>
-                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth disabled light-green darken-3 hide-on-med-and-up">ตารางการแสดง ลานอเนกประสงค์ฯ</a>
+                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth light-green darken-3 hide-on-small-only">ตารางการแสดง ลานอเนกประสงค์ 70 ปี ต.อ.</a>
+                    <a href="/timetable_ground.pdf" class="waves-effect waves-light btn fullwidth light-green darken-3 hide-on-med-and-up">ตารางการแสดง ลานอเนกประสงค์ฯ</a>
                 </div>
                 <div class="col s12 m6">
                     <a href="/timetable_hall.pdf" class="waves-effect waves-light btn fullwidth deep-purple darken-1 hide-on-small-only">ตารางการแสดง หอประชุมโรงเรียนเตรียมอุดมศึกษา</a>

@@ -40,8 +40,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/logout', 'UserController@logout');
     Route::get('/register', function () {
         if(\App\Http\Controllers\UserController::getUserData()['registered']){
-            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว สามารถแก้ไขข้อมูลได้ผ่านทางแอปพลิเคชั่นเท่านั้น');
-            return redirect('/');
+            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว หากมีปัญหาใดๆ โปรดติดต่อที่เฟสบุ๊กเพจ Triam Udom Open House');
+
+             return Redirect::to('/' . "#s-intro");
+            //  return redirect('/');
         }
         return view('register');
     });

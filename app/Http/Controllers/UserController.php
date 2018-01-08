@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Exception;
 use \Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
 {
@@ -104,7 +105,7 @@ class UserController extends Controller
 
     public function register(Request $request){
         if(self::isLoggedIn() && self::getUserData()['registered']){
-            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว ไม่แก้ไข้อมูลได้ หากมีปัญหาใดๆ โปรดติดต่อที่เฟสบุ๊กเพจ Triam Udom Open House');
+            session()->flash('error', 'คุณได้ลงทะเบียนเรียบร้อยแล้ว ไม่แก้ไขข้อมูลได้ หากมีปัญหาใดๆ โปรดติดต่อที่เฟสบุ๊กเพจ Triam Udom Open House');
             return redirect()->back();
         }
 
@@ -183,7 +184,8 @@ class UserController extends Controller
                 return redirect()->back();
             } else {
                 session()->flash('status', 'ลงทะเบียนสำเร็จ');
-                return redirect('/');
+                return Redirect::to('/' . "#s-intro");
+                // return redirect('/');
             }
         }
         catch(Exception $ex){
