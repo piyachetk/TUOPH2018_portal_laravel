@@ -118,6 +118,7 @@
                     <a href="https://www.facebook.com/WatasilpTU/">ชมรมวาทศิลป์</a>	<br/>
                     <a href="https://www.facebook.com/tu.literatureartclub/">ชมรมวรรณศิลป์ ต.อ.</a>	<br/>
                     <a href="https://www.facebook.com/TuArtClub/">ชมรมศิลปศึกษา</a>	<br/>
+                    <a href="https://www.facebook.com/%E0%B8%8A%E0%B8%A1%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%89-%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A1%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-122742547806407/?ref=bookmarks">ชมรมกฎหมายน่ารู้</a>	<br/>
                 </div>
                 <div class="col s12 m4">
                     ชมรมผู้บำเพ็ญประโยชน์	<br/>
@@ -166,7 +167,7 @@
             </div>
             <div class="col s12 m6">
                 <a href="/plan70.jpg" class="waves-effect waves-light btn fullwidth teal">ลานอเนกประสงค์ 70 ปีต.อ.</a>
-            </div>
+
             <div class="col s12 m6">
                 <a href="/plan-library.jpg" class="waves-effect waves-light btn fullwidth blue">บริเวณห้องสมุด</a>
             </div>
@@ -184,10 +185,11 @@
             <div class="row" style="line-height: 32px;">
                 <div class="col s12 m6">
                     <h5>ลานอเนกประสงค์ 70 ปี ต.อ.</h5>
-                    คณะคทากรโรงเรียน คัลเลอร์การ์ด<br/>
-                    คณะผู้นำเชียร์โรงเรียน
+                    <a href="https://clubs.triamudom.ac.th/page/drum">คณะคทากรโรงเรียน</a>
+                    คัลเลอร์การ์ด<br/>
+                    <a href="https://www.facebook.com/triamudomcld/">คณะผู้นำเชียร์โรงเรียน</a>
                     คณะผู้นำเชียร์ประจำคณะสี<br/>
-                    ชมรมดนตรีสากล ชมรมนิเทศศิลป<br/>
+                    <a href=" https://www.facebook.com/tumusicclub/">ชมรมดนตรีสากล</a> ชมรมนิเทศศิลป<br/>
                     ชมรมเชียร์ ชมรมนาฏศิลป์<br/>
                     ชมรมสีสรรพ์ภาษาต่างประเทศที่ ๒ (ภาษาญี่ปุ่น)<br/>
                     นักเรียนสายการเรียนต่างๆ<br/>
@@ -275,6 +277,7 @@
             <b>โรงเรียนเตรียมอุดมศึกษา</b><br/>
             227 ถนนพญาไท แขวงปทุมวัน เขตปทุมวัน กรุงเทพมหานคร 10330<br />
             (<a class="modal-trigger" href="#modal-direction">การเดินทาง</a>{{-- | <a href="/birdmap.jpg">แผนผัง</a>--}})
+            <p>หมายเหตุ: ขอความกรุณาผู้ที่มาเข้าร่วมงาน ต.อ. นิทรรศ ๘ ทศวรรษเตรียมอุดมศึกษา เดินทางโดยรถสาธารณะ เพื่อลดปัญหาทางด้านการจราจร</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.611217557155!2d100.53043846420802!3d13.741972256501489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed3828ba8e5%3A0xf0db3be87e158217!2zVHJpYW0gVWRvbSBTdWtzYSBTY2hvb2wg4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4LmA4LiV4Lij4Li14Lii4Lih4Lit4Li44LiU4Lih4Lio4Li24LiB4Lip4Liy!5e0!3m2!1sth!2sth!4v1471690441533"
                     frameborder="0" allowfullscreen style="border:0; height:220px; width:100%"></iframe>
         </div>
