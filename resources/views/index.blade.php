@@ -176,7 +176,7 @@
         </div>
         <br/>
 
-        <h5 class="center theme-color light-text">แผนการเรียน</h5>
+        <h5 class="center theme-color light-text">ผังงาน</h5>
         <div class="row">
             <div class="col s12 m6">
                 <a href="/plan-front.jpg" class="waves-effect waves-light btn fullwidth teal darken-3">บริเวณสนามหญ้าหน้าหอประชุมฯ</a>
