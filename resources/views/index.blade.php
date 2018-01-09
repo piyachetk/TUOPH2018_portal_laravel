@@ -53,7 +53,7 @@
             @if($data != null && $data['registered'] && !session()->has('status'))
                 <div class="z-depth-1 card-panel green white-text" style="max-width:800px; margin: 3rem auto 3rem;">
                     รหัสยืนยันการลงทะเบียนของคุณคือ {{ $data['id'] }}<br/>
-                    <span style="font-size: 0.8em">กรุณาแจ้งรหัสที่ ณ จุดลงทะเบียน เพื่อรับเกียรติบัตรและสูติบัตรงาน</span>
+                    <span style="font-size: 0.8em">กรุณาแจ้งรหัสนี้ ณ จุดลงทะเบียน เพื่อรับเกียรติบัตรและสูติบัตรงาน</span>
                 </div>
             @endif
 
@@ -147,7 +147,7 @@
                 <div class="col s12 m4">
                     <a href="https://www.facebook.com/tuyearbookclub/">ชมรมสร้างสรรค์หนังสือ</a> <br/>
                     <a href="https://www.facebook.com/tu.comicclub/">ชมรมการ์ตูน</a> <br/>
-                    ชมรมนิเทศศิลป <br/>
+                    <a href="https://www.facebook.com/%E0%B8%8A%E0%B8%A1%E0%B8%A3%E0%B8%A1%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B-%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A1%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-168207636569942/">ชมรมนิเทศศิลป</a>	<br/>
                     <a href="https://www.facebook.com/RobotTU/">ชมรมของเล่นเพื่อการเรียนรู้</a> <br/>
                     ชมรมเศรษฐศาสตร์ <br/>
                     <a href="https://www.facebook.com/TUGLOBE/">ชมรมโลกทั้งระบบ</a> <br/>
@@ -177,20 +177,20 @@
         <br/>
 
         <h5 class="center theme-color light-text">ผังงาน</h5>
+        <div class="container">
+            <div class="row">
+                <a href="/plan-school.jpg" class="waves-effect waves-light btn fullwidth pink lighten-1 hide-on-small-only">ผังงานต.อ. นิทรรศ ๘ ทศวรรษเตรียมอุดมศึกษา</a>
+                <a href="/plan-school.jpg" class="waves-effect waves-light btn fullwidth pink lighten-1 hide-on-med-and-up">ผังงานต.อ. นิทรรศ</a>
+            </div>
+        </div>
         <div class="row">
             <div class="col s12 m6">
-                <a href="/plan-front.jpg" class="waves-effect waves-light btn fullwidth teal darken-3">บริเวณสนามหญ้าหน้าหอประชุมฯ</a>
+                <a href="/plan-front.jpg" class="waves-effect waves-light btn fullwidth teal darken-3">บริเวณสนามหญ้าหน้าหอประชุม</a>
+                <a href="/plan-auditorium.jpg" class="waves-effect waves-light btn fullwidth deep-purple darken-1">บริเวณหอประชุมโรงเรียน</a>
             </div>
             <div class="col s12 m6">
                 <a href="/plan-ground.jpg" class="waves-effect waves-light btn fullwidth light-green darken-3">ลานอเนกประสงค์ 70 ปี ต.อ.</a>
-            </div>
-            <div class="col s12 m6">
-                <a href="/plan-auditorium.jpg" class="waves-effect waves-light btn fullwidth deep-purple darken-1">บริเวณหอประชุมโรงเรียนฯ</a>
-            </div>
-            <div class="col s12 m6">
                 <a href="/plan-60.jpg" class="waves-effect waves-light btn fullwidth light-blue darken-4">บริเวณหน้าตึก 60 ปี</a>
-            </div>
-            <div class="col s12 m6">
                 <a href="/plan-72.jpg" class="waves-effect waves-light btn fullwidth blue">บริเวณหน้าตึกเฉลิมพระเกียรติ 72 พรรษา</a>
             </div>
         </div>
@@ -219,7 +219,7 @@
                 <div class="col s12 m6">
                     <h5>หอประชุมโรงเรียนเตรียมอุดมศึกษา</h5>
                     ชมรมภาพยนตร์สั้นและสื่อโทรทัศน์<br/>
-                    ชมรมนิเทศศิลป<br/>
+                    <a href="https://www.facebook.com/artsclubofTU/">ชมรมนิเทศศิลป</a> <br/>
                     <a href="https://www.facebook.com/EntertainerClub/">ชมรมสันทนากร</a> <br/>
                     <a href=" https://m.facebook.com/Triamudom-Suksa-Wing-Symphony-Orchestra-338542792849087/">ชมรมดุริยางค์</a>และวงดนตรีร่วมสมัย
                     <br/>
