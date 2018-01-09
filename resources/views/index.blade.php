@@ -50,7 +50,7 @@
                 $data = \App\Http\Controllers\UserController::getUserData();
             @endphp
 
-            @if($data != null && !session()->has('status'))
+            @if($data != null && $data['registered'] && !session()->has('status'))
                 <div class="z-depth-1 card-panel green white-text" style="max-width:800px; margin: 3rem auto 3rem;">
                     รหัสยืนยันการลงทะเบียนของคุณคือ {{ $data['id'] }}
                 </div>
