@@ -183,7 +183,8 @@ class UserController extends Controller
                 session()->flash('error', 'มีข้อผิดพลาดที่ไม่สามารถระบุได้ กรุณาติดต่อผู้ดูแลระบบ');
                 return redirect()->back();
             } else {
-                session()->flash('status', 'ลงทะเบียนสำเร็จ รหัสยืนยันการลงทะเบียนของคุณคือ ' . self::getUserData()['id']);
+                session()->flash('status', 'ลงทะเบียนสำเร็จ รหัสยืนยันการลงทะเบียนของคุณคือ ' . self::getUserData()['id']
+                    . ' กรุณาแจ้งรหัสที่ ณ จุดลงทะเบียน เพื่อรับเกียรติบัตรและสูติบัตรงาน');
                 return Redirect::to('/' . "#s-intro");
                 // return redirect('/');
             }

@@ -52,7 +52,8 @@
 
             @if($data != null && $data['registered'] && !session()->has('status'))
                 <div class="z-depth-1 card-panel green white-text" style="max-width:800px; margin: 3rem auto 3rem;">
-                    รหัสยืนยันการลงทะเบียนของคุณคือ {{ $data['id'] }}
+                    รหัสยืนยันการลงทะเบียนของคุณคือ {{ $data['id'] }}<br/>
+                    <span style="font-size: 0.8em">กรุณาแจ้งรหัสที่ ณ จุดลงทะเบียน เพื่อรับเกียรติบัตรและสูติบัตรงาน</span>
                 </div>
             @endif
 
@@ -173,22 +174,26 @@
                 </div>
             </div>
         </div>
-        {{--
+        <br/>
+
+        <h5 class="center theme-color light-text">แผนการเรียน</h5>
         <div class="row">
             <div class="col s12 m6">
-                <a href="/plan-auditorium.jpg" class="waves-effect waves-light btn fullwidth green">บริเวณหอประชุม</a>
+                <a href="/plan-front.jpg" class="waves-effect waves-light btn fullwidth teal darken-3">บริเวณสนามหญ้าหน้าหอประชุมฯ</a>
             </div>
             <div class="col s12 m6">
-                <a href="/plan70.jpg" class="waves-effect waves-light btn fullwidth teal">ลานอเนกประสงค์ 70 ปีต.อ.</a>
-
-            <div class="col s12 m6">
-                <a href="/plan-library.jpg" class="waves-effect waves-light btn fullwidth blue">บริเวณห้องสมุด</a>
+                <a href="/plan-ground.jpg" class="waves-effect waves-light btn fullwidth light-green darken-3">ลานอเนกประสงค์ 70 ปี ต.อ.</a>
             </div>
             <div class="col s12 m6">
-                <a href="/plan-60.jpg" class="waves-effect waves-light btn fullwidth cyan">บริเวณหน้าตึก 60 ปี</a>
+                <a href="/plan-auditorium.jpg" class="waves-effect waves-light btn fullwidth deep-purple darken-1">บริเวณหอประชุมโรงเรียนฯ</a>
+            </div>
+            <div class="col s12 m6">
+                <a href="/plan-60.jpg" class="waves-effect waves-light btn fullwidth light-blue darken-4">บริเวณหน้าตึก 60 ปี</a>
+            </div>
+            <div class="col s12 m6">
+                <a href="/plan-72.jpg" class="waves-effect waves-light btn fullwidth blue">บริเวณหน้าตึกเฉลิมพระเกียรติ 72 พรรษา</a>
             </div>
         </div>
-        --}}
     </div>
     <div class="divider"></div>
 
