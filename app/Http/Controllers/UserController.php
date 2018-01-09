@@ -183,7 +183,7 @@ class UserController extends Controller
                 session()->flash('error', 'มีข้อผิดพลาดที่ไม่สามารถระบุได้ กรุณาติดต่อผู้ดูแลระบบ');
                 return redirect()->back();
             } else {
-                session()->flash('status', 'ลงทะเบียนสำเร็จ');
+                session()->flash('status', 'ลงทะเบียนสำเร็จ รหัสยืนยันการลงทะเบียนของคุณคือ ' . self::getUserData()['id']);
                 return Redirect::to('/' . "#s-intro");
                 // return redirect('/');
             }
