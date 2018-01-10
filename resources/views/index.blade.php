@@ -53,7 +53,7 @@
             @if($data != null && $data['registered'] && !session()->has('status'))
                 <div class="z-depth-1 card-panel green white-text" style="max-width:800px; margin: 3rem auto 3rem;">
                     รหัสยืนยันการลงทะเบียนของคุณคือ {{ $data['id'] }}<br/>
-                    <span style="font-size: 0.8em">กรุณาแจ้งรหัสนี้ ณ จุดลงทะเบียน เพื่อรับเกียรติบัตรและสูติบัตรงาน</span>
+                    <span style="font-size: 0.8em">กรุณาแจ้งรหัสนี้ ณ จุดลงทะเบียน เพื่อรับเกียรติบัตรและสูจิบัตรงาน</span>
                 </div>
             @endif
 
