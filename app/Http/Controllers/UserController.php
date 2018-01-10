@@ -184,7 +184,7 @@ class UserController extends Controller
                 return redirect()->back();
             } else {
                 session()->flash('status', 'ลงทะเบียนสำเร็จ รหัสยืนยันการลงทะเบียนของคุณคือ ' . self::getUserData()['id']
-                    . ' กรุณาแจ้งรหัสที่ ณ จุดลงทะเบียน เพื่อรับเกียรติบัตรและสูติบัตรงาน');
+                    . ' กรุณาแจ้งรหัสที่ ณ จุดลงทะเบียน เพื่อรับเกียรติบัตรและสูจิบัตรงาน');
                 return Redirect::to('/' . "#s-intro");
                 // return redirect('/');
             }
