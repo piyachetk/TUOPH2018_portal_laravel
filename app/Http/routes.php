@@ -36,6 +36,7 @@ Route::get('/redirectApp', function () {
     }
 });
 
+/*
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/logout', 'UserController@logout');
     Route::get('/register', function () {
@@ -57,3 +58,4 @@ Route::group(['middleware' => ['guest-only']], function () {
     Route::get('/login/facebook', 'UserController@loginFacebook');
     Route::get('/login/google', 'UserController@loginGoogle');
 });
+*/

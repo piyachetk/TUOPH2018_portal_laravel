@@ -115,6 +115,16 @@
             padding-right: 5%;
         }
 
+        #s-thankyou {
+            font-family: "Kanit", sans-serif;
+            font-weight: 200 !important;
+            font-size: 1.4rem !important;
+            background-color: #fae4f5;
+            padding-top: 40px;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
         #s-exhibition, #s-show, #s-competition, #s-map {
             padding-top: 40px;
             padding-bottom: 30px;
@@ -193,22 +203,24 @@
         @endif
         <ul class="right hide-on-med-and-down light-text">
             <li{{ Route::current()->getName() == 'index' ? " class=active" : '' }}><a href="/">หน้าแรก</a></li>
+            {{--
             @if(!\App\Http\Controllers\UserController::isLoggedIn())
-                {{-- <li{{ Route::current()->getName() == 'login' ? " class=active" : '' }}><a href="/login/">เข้าสู่ระบบ</a></li> --}}
                 <li{{ Route::current()->getName() == 'login' ? " class=active" : '' }}><a href="/login/">ลงทะเบียน</a></li>
             @else
                 <li><a href="/logout/">ออกจากระบบ</a></li>
             @endif
+            --}}
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
             <li><a class="center" href="/">หน้าแรก</a></li>
-            {{-- TODO: Mobile system redesign --}}
+            {{--
             @if(!\App\Http\Controllers\UserController::isLoggedIn())
                 <li><a class="center" href="/login/">ลงทะเบียน</a></li>
             @else
                 <li><a class="center" href="/logout/">ออกจากระบบ</a></li>
             @endif
+            --}}
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>

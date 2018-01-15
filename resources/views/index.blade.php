@@ -32,6 +32,18 @@
 @endsection
 
 @section("content")
+    <div class="section center-align fullpage" id="s-thankyou">
+        <h5 class="theme-color">ขอขอบคุณที่เข้าร่วมงาน</h5>
+        <p>ทางคณะผู้จัดงาน ขอขอบคุณทุกท่านที่ให้ความสนใจ และเข้าร่วมกิจกรรม<br/>
+            "ต.อ. นิทรรศ ๘ ทศวรรษ<wbr><span class="nobr">เตรียมอุดมศึกษา</span>" ในครั้งนี้ <br/>
+            ทางคณะผู้จัดงานหวังเป็นอย่างยิ่งว่า ทุกท่านจะได้รับความสุข และรู้จักโรงเรียนเตรียมอุดมศึกษาในมุมมองต่างๆ มากยิ่งขึ้น<br/><br/>
+            แล้วพบกันใหม่ปีหน้า<br/>
+            #TriamUdom<wbr>OpenHouse2018
+        </p>
+        <sub>คณะกรรมการงานกิจกรรมพัฒนาผู้เรียน</sub>
+        <br/><br/>
+    </div>
+
     <div class="section center-align fullpage" id="s-intro">
         <div class="container">
             @if(session()->has('error'))
@@ -52,7 +64,7 @@
 
             @if($data != null && $data['registered'] && !session()->has('status'))
                 <div class="z-depth-1 card-panel green white-text" style="max-width:800px; margin: 3rem auto 3rem;">
-                    รหัสยืนยันการลงทะเบียนของคุณคือ {{ $data['id'] }}<br/>
+                    รหัสยืนยันการลงทะเบียนของคุณคือ <span style="font-size: 2rem">{{ $data['id'] }}</span><br/>
                     <span style="font-size: 0.8em">กรุณาแจ้งรหัสนี้ ณ จุดลงทะเบียน เพื่อรับเกียรติบัตรและสูจิบัตรงาน</span>
                 </div>
             @endif
@@ -72,19 +84,18 @@
             --}}
             @if($data != null)
                 @if(!$data['registered'])
-                    <a href="/register" class="waves-effect waves-light btn login">ลงทะเบียนเข้าร่วมงาน</a>
+                    <a href="/register" class="waves-effect waves-light btn login disabled">ลงทะเบียนเข้าร่วมงาน</a>
                 @else
                     <a href="/logout" class="waves-effect waves-light btn indigo darken-3 logout hide-on-small-only">ลงทะเบียนเรียบร้อยแล้ว
                         ออกจากระบบ</a>
                     <a href="/logout" class="waves-effect waves-light btn indigo darken-3 logout hide-on-med-and-up">ออกจากระบบ</a>
                 @endif
             @else
-                <a href="/login" class="waves-effect waves-light btn login">ลงทะเบียนเข้าร่วมงาน</a>
+                <a href="/login" class="waves-effect waves-light btn login disabled">ลงทะเบียนเข้าร่วมงาน</a>
             @endif
         </div>
-        <br/><br/>
+        <br/>
     </div>
-    <br/>
 
     <div class="section" id="s-exhibition">
         <h4 class="center theme-color">นิทรรศการ</h4>
